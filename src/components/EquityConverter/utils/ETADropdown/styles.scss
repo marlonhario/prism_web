@@ -1,0 +1,70 @@
+.equity-converter-eta-dropdown {
+  width: 193px;
+  text-transform: uppercase;
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  user-select: none;
+
+  .equity-converter-eta-dropdown-selected {
+    height: 30px;
+    cursor: pointer;
+
+    .equity-converter-eta-dropdown-selected-text {
+      text-align: center;
+      color: #5A6267;
+    }
+
+    .equity-converter-eta-dropdown-selected-icon {
+      width: 25px;
+      height: 27px;
+      margin-right: 1px;
+
+      svg {
+        transform: rotate(180deg);
+        transition: transform 200ms ease;
+      }
+    }
+  }
+
+  &.disabled {
+    .equity-converter-eta-dropdown-selected {
+      cursor: not-allowed;
+    }
+  }
+
+  &.open {
+    .equity-converter-eta-dropdown-selected {
+      .equity-converter-eta-dropdown-selected-icon {
+        svg {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+}
+
+.equity-converter-eta-dropdown-options {
+  display: none;
+  padding: 0;
+
+  &.open {
+    display: flex;
+  }
+
+  .equity-converter-eta-dropdown-option-item {
+    height: 30px;
+    border: 0.5px solid #FFFFFF;
+    cursor: pointer;
+
+    &.red {
+      background: linear-gradient(130.53deg, #DB3155 0%, rgba(219, 49, 85, 0.6) 100%), #F5BD1A;
+    }
+
+    &.green {
+      background: linear-gradient(130.53deg, #C7DB6D 0%, rgba(199, 219, 109, 0.5) 100%), #73BD59;
+    }
+
+    &.blue {
+      background: linear-gradient(130.53deg, #65CDF3 0%, rgba(101, 205, 243, 0.5) 100%), #1C59A8;
+    }
+  }
+}

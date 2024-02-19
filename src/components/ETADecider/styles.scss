@@ -1,0 +1,65 @@
+.etaDecider {
+  background: linear-gradient(152.62deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 101%), rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 5rem 3rem 3rem 3rem;
+  .content {
+    .investment {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed white;
+      .investFor {
+        display: flex;
+        flex-direction: row;
+        .income-btn, .growth-btn {
+          border-radius: 0.25rem;
+          border:1px solid grey;
+          padding: 0.5rem;
+        }
+        .income-btn:hover, .growth-btn:hover, .income-btn.selected, .growth-btn.selected {
+          background-color: white;
+          font-weight: bold;
+        }
+      }
+    }
+    .categories {
+      padding-top: 1.5rem;
+      border-bottom: 1px dashed white;
+      .categoryTypes {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+          button {
+            border-radius: 0.25rem;
+            border:1px solid grey;
+            padding: 0.5rem;
+            margin-right: 2rem;
+          }
+          button:hover, button.selected {
+            background-color: white;
+            font-weight: bold;
+          }
+      }
+      .categoryTypes:last-child {
+        padding-bottom: 1rem;
+      }
+    }
+    
+    .eta {
+      padding-top: 1.5rem;
+      .etaTypes {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+          button {
+            border-radius: 0.25rem;
+            border:1px solid white;
+            padding: 0.5rem;
+            margin-right: 2rem;
+            color: white;
+          }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@mixin cube-zoom($breakpoint, $zoom, $padding: "") {
+    @media (min-width: $breakpoint) {
+        #eta-cube {
+            zoom: $zoom;
+            overflow: hidden;
+            @if $padding != "" {
+                padding-right: $padding;
+                padding-left: $padding;
+            }
+        }
+    }
+}
+
+@include cube-zoom(1020px, 60%, 10px);
+@include cube-zoom(1150px, 65%, 10px);
+@include cube-zoom(1300px, 58%);
+@include cube-zoom(1500px, 70%);
+@include cube-zoom(1650px, 85%);
+@include cube-zoom(1900px, 100%);
+@include cube-zoom(2300px, 120%);
+@include cube-zoom(3000px, 160%);

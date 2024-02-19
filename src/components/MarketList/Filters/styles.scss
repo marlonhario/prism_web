@@ -1,0 +1,27 @@
+.resetMarginLeft {
+  margin-left: 0 !important;
+}
+.region {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 50px;
+  padding: 0;
+  border: 1px solid #bbb8b8;
+}
+.region.active {
+  background-color: #2c2f33;
+  color: white;
+}
+.selectAllDivEta, .selectAllGrowthEta {
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  width: fit-content;
+  color: #a49e99;
+}
+.selectAllDivEta.active, .selectAllGrowthEta.active {
+  background-color: #2c2f33;
+  color: white !important;
+}
+.selectAllDivEta:focus, .selectAllDivEta:hover, .selectAllGrowthEta:focus, .selectAllGrowthEta:hover {
+  color: #a49e99;
+}

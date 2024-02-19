@@ -1,0 +1,101 @@
+.equityCalculator {
+    padding: 3rem;
+    padding-top: 10px;
+  .cardStyle {
+    min-height: 20rem;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    border: 2px solid #ddd !important;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 43%;
+    left: 48.5%;
+    transform: none;
+    color: #c4c4c4;
+    svg {
+      width: 50px;
+      height: auto;
+    }
+  }
+  .secondary-arrow {
+    position: absolute;
+    display: none;
+  }
+  .boxShadow {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  }
+  .textAlignRight {
+    .ant-input {
+      text-align: right;
+    }
+  }
+  
+  .ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    line-height: 19px !important;
+  }
+  .ant-statistic-content {
+    padding-top: 0.5rem !important;
+    font-size: 16px !important;
+  }
+  .pt-zero-point-five-rem {
+    padding-top: 0.5rem;
+  }
+  .ant-input {
+    justify-content: right;
+  }
+  .whitePlus {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+  }
+  .add-to-portfolio-text{
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+
+  /* Styles of the each component box */
+  .boxStyle {
+    min-height: 340px;
+  }
+
+  /* Colors codes for ETA type */
+  .PureGrowth {
+    background-color: #C7DB6D;
+  }
+  .PureDiv {
+    background-color: #73BD59;
+  }
+  .MaxDiv {
+    background-color: #F5BD1A;
+  }
+  .GrowthGuard {
+    background-color: #DB3155;
+  }
+  .MaxGrowth {
+    background-color: #65CDF3;
+  }
+  .DivGuard {
+    background-color: #1C59A8;
+  }
+
+  .addToPortfolio {
+    height: 5rem;
+    width: 5rem;
+    background-color: #f1f1f1;
+  }
+
+  /* Media query for  */
+  @media (max-width: 767px) {
+    .arrow {
+      bottom: 47%;
+      transform: rotate(90deg);
+      left: 49%;
+    }
+    .secondary-arrow {
+      transform: rotate(90deg);
+      left: 49%;
+      display: block;
+    }
+  }
+}

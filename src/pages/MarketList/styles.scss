@@ -1,0 +1,43 @@
+.marketList {
+  font-size: 12px;
+  padding-top: 3rem;
+  height: 100%;
+  background: linear-gradient(152.62deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 101%), rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  &__filters {
+    .ant-checkbox-wrapper {
+      font-size: 12px;
+    }
+  }
+  &__container {
+    height: inherit;
+    .etaMarketList {
+      padding-top: 3.75rem;
+    }
+  }
+  &__header {
+    .headerText {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: #151515;
+    }
+  }
+  &__table {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 0 -12px 0 -12px;
+    height: 100%;
+  }
+}
+
+// Common Styles
+/* Colors codes for ETA type */
+.PureGrowth { background-color: #C7DB6D; }
+.PureDiv { background-color: #73BD59; }
+.MaxDiv { background-color: #F5BD1A; }
+.GrowthGuard { background-color: #DB3155; }
+.MaxGrowth { background-color: #65CDF3; }
+.DivGuard { background-color: #1C59A8; }

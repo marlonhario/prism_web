@@ -1,0 +1,31 @@
+@import url('./fonts/index.css');
+
+.equity-converter-typography {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  &.graphik {
+    font-family: 'Graphik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &.open-sans {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  @for $i from 8 to 60 {
+    &.fs#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+
+  @for $i from 1 to 10 {
+    &.fw#{$i}00 {
+      font-weight: #{$i}00;
+    }
+  }
+}

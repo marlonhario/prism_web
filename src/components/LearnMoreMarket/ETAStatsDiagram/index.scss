@@ -1,0 +1,71 @@
+.learnmore-market-eta-stats-diagram {
+  padding: 0 2%;
+  width: 100%;
+  background: linear-gradient(135deg, #E5E5E5 0%, #FDFDFD 100%);
+  box-shadow: -7px 7px 14px rgba(205, 205, 205, 0.2), 7px -7px 14px rgba(205, 205, 205, 0.2), -7px -7px 14px rgba(255, 255, 255, 0.9), 7px 7px 18px rgba(205, 205, 205, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(205, 205, 205, 0.5);
+  border-radius: 10px;
+
+  .learnmore-market-eta-stats-diagram-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 6% 2%;
+
+    .learnmore-market-eta-stats-diagram-header-title {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      color: #A49E99;
+    }
+
+    .learnmore-market-eta-stats-diagram-header-legends {
+      display: flex;
+      column-gap: 20px;
+
+      .learnmore-market-eta-stats-diagram-header-legend {
+        position: relative;
+
+        span {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 13px;
+          letter-spacing: 0.1em;
+          text-align: left;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          width: 26px;
+          height: 3px;
+        }
+
+        &:first-child {
+          &:before {
+            background-color: #A49E99;
+          }
+        }
+
+        &:nth-child(2) {
+          &:before {
+            background-color: #01C4EA;
+          }
+        }
+
+        &:last-child {
+          &:before {
+            background-color: #265C89;
+          }
+        }
+      }
+    }
+  }
+
+  .learnmore-market-eta-stats-diagram-body {
+    canvas {
+      // height: 200px !important;
+    }
+  }
+}

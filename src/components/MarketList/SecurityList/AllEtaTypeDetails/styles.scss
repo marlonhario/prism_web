@@ -1,0 +1,30 @@
+.allEtaTypeDetails {
+  background-color: #5a6267;
+  color: #ffffff;
+  padding: 0.5rem;
+  .etaDetailsHeader {
+    font-size: 9px;
+  }
+  .etaDetailsContent {
+    .etaPrice {
+      width: 20%;
+    }
+    .etaGrowth {
+      width: 20%;
+    }
+    .etaYield {
+      width: 20%;
+    }
+  }
+  .addSymbol {
+    background-color: #ced0d1;
+    color: #b0b3b5;
+    padding: 0.2rem 0.4rem 0.3rem 0.4rem;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .addSymbol:hover {
+    cursor: not-allowed;
+  }
+}

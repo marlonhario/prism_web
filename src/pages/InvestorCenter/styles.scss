@@ -1,0 +1,21 @@
+.investor-center {
+    width: 100%;
+    margin-right: calc(-3.5% - 5px);
+    overflow-y: auto;
+    overflow-y: overlay;
+
+    >div {
+        // width: 100%;
+        height: 100%;
+    }
+
+    .public-content {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    >ol {
+        list-style-type: none;
+    }
+}

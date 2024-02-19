@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 520px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;    
+  background: linear-gradient(248.38deg, #A2A4A9 35.08%, #808288 96.48%);
+  opacity: 0.8;
+}
+
+.outerCube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/svg/hex-outer-cube.svg');
+  background-position: center;
+  background-size: 980px;
+  opacity: 0.3;
+}
+
+.innerCube {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/svg/hex-inner-cube.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 980px;
+}

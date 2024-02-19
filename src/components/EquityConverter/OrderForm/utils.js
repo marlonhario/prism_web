@@ -1,0 +1,4 @@
+export const sectionTitle= 'Order Form';
+export const descriptionContent = 'To enhance your position through ETAs, you will first need to convert your underlying holding into your chosen pair of ETAs. Investors with a broker sponsored HIN can deliver the underlying securities to Prism via the pre-filled shareholder application below.';
+export const secondaryDescriptionContent = 'The underlying securities will be held by the Prism Securities Trustee in a custody arrangement for you as the beneficial holder of the underlying security. After T+2 you will receive your ETAs in your brokered sponsored HIN.';
+export const stepTwoDescription = 'In order to optimise your holding or release capital, you will need to sell one component of the ETA pairing for an upfront sum. These funds can either be retained or used to purchase additional ETAs that are more aligned to your overall objective.';

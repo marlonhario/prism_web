@@ -1,0 +1,19 @@
+<mxfile host="Electron" modified="2022-02-04T04:44:18.040Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/16.5.1 Chrome/96.0.4664.110 Electron/16.0.7 Safari/537.36" etag="AgzgEGggGpw85mevtIoS" compressed="false" version="16.5.1" type="device">
+  <diagram id="e1k7WPy5bhWz5Tn2neuC" name="Page-1">
+    <mxGraphModel dx="211" dy="164" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9ssIm_ST_UVE5_FQ7lBR-1" value="anim.cube_trigger" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="35" y="590" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T8cHJwej8LphOnJuuVUC-1" value="scale=0--ease_in_out_cubic" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="760" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T8cHJwej8LphOnJuuVUC-3" value="scale=1--ease_in_out_cubic" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+          <mxGeometry y="700" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

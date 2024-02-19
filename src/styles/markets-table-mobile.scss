@@ -1,0 +1,60 @@
+.close-markets {
+  width: 28%;
+}
+
+.search-market {
+  width: 40%;
+  padding-right: 0;
+}
+
+.eta-switch {
+  width: 17%;
+}
+
+.open-filters {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 5px;
+}
+
+.underlying-security-col,
+.eta-list-col {
+  width: 24%;
+}
+
+.last-price-col,
+.change-col,
+.divident-yield-col,
+.dividend-payout-ratio-col {
+  width: 19%;
+}
+
+.markets-table-header-button {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.markets-modal {
+  background: #343741;
+  box-shadow: -1px -1px 2px rgba(137, 139, 143, 0.2),
+    1px 1px 2px rgba(137, 139, 143, 0.2), -1px 1px 2px rgba(193, 195, 201, 0.9),
+    1px -1px 3px rgba(137, 139, 143, 0.9);
+
+  .modal-background {
+    background: linear-gradient(
+      169.03deg,
+      rgba(255, 255, 255, 0.4) -0.81%,
+      rgba(255, 255, 255, 0) 136.27%
+    );
+    opacity: 0.5;
+    filter: drop-shadow(0px -1px 30px rgba(71, 76, 85, 0.3));
+  }
+}
+
+.filter-btn {
+  background: linear-gradient(135deg, #343741 0%, #202022 100%);
+  box-shadow: -1px 1px 2px rgba(22, 22, 24, 0.2),
+    1px -1px 2px rgba(22, 22, 24, 0.2), -1px -1px 2px rgba(46, 46, 48, 0.9),
+    1px 1px 3px rgba(22, 22, 24, 0.9);
+  border-radius: 20px;
+}

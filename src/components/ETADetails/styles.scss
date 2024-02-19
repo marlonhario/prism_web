@@ -1,0 +1,34 @@
+.learnMore {
+  background: white;
+  height: 100%;
+  font-family: 'DIN 2014 reg';
+  .backButton {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 85px;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    span {
+      position: absolute;
+      bottom: 2px;
+    }
+  }
+  nav {
+    padding: 2rem 3rem;
+  }
+  .eta_header {
+    min-height: 233px;
+    .spec {
+      font-size: 10px;
+    }
+  }
+  .playVideoText {
+    position: absolute;
+    bottom: 28%;
+    left: 50px;
+  }
+  p {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+  }
+}

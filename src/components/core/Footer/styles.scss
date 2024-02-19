@@ -1,0 +1,10 @@
+@media (max-width: 565px) {
+  .footer-container {
+    flex-direction: column;
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

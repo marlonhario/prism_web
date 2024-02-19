@@ -1,0 +1,29 @@
+.header{
+    background-color: #000;
+    height: 50px;
+    color: #fff;
+    .prism-logo {
+        margin-left: 120px;
+    }
+    .link {
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        &.active-tab {
+            background: rgba(255, 255, 255, 0.15);
+            mix-blend-mode: normal;
+            border-radius: 3px;
+        }
+    }
+    .user-icon {
+        vertical-align: middle;
+    }
+    .ant-btn-text[disabled], .ant-btn-text[disabled]:hover, .ant-btn-text[disabled]:focus, .ant-btn-text[disabled]:active {
+        color: white;
+        border-color: transparent;
+        background: transparent;
+        /* text-shadow: none; */
+        /* box-shadow: none; */
+        opacity: 0.5;
+    }
+}

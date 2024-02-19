@@ -1,0 +1,10 @@
+export { ReactComponent as ArrowLeftIcon } from './arrow-left.svg';
+export { ReactComponent as ArrowRightIcon } from './arrow-right.svg';
+export { ReactComponent as ArrowUpIcon } from './arrow-up.svg';
+export { ReactComponent as ArrowDownIcon } from './arrow-down.svg';
+export { ReactComponent as SliderLeftArrowIcon } from './slider-left-arrow.svg';
+export { ReactComponent as SliderRightArrowIcon } from './slider-right-arrow.svg';
+export { ReactComponent as PlusIcon } from './plus.svg';
+export { ReactComponent as EqualsIcon } from './equals.svg';
+export { ReactComponent as BorderRightColor } from './border-right-color.svg';
+export { ReactComponent as BorderBottomColor } from './border-bottom-color.svg';

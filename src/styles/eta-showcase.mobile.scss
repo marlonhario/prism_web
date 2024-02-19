@@ -1,0 +1,37 @@
+.hide-mobile {
+    display: none;
+  }
+  .eta-showcase {
+    .eta-header {
+      .dropdown-container {
+        width: 50%;
+        margin: unset;
+        padding-left: 2.5rem;
+      }
+      .market-container {
+        padding-right: 2.5rem;
+      }
+    }
+    #eta-cube {
+      .eta-showcase-content {
+        width: 100%;
+        .growth-col,
+        .dividend-col {
+          width: 50%;
+          .income-profile-container,
+          .growth-profile-container {
+            width: 95%;
+            .eta-profile-info {
+              > .flex {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .cube-col {
+          display: none;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,73 @@
+.landing-page-container {
+    background: #ffffff;
+    .header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        background-color: #2C2F33;
+        height: 50px;
+        .prism-details{
+            margin-top: 10px;
+            background-color: #2c2f33;
+            border-color: #2c2f33;
+            border-radius: 3px;
+            color: white;
+        }
+        .prism-svg{
+            margin-top: 10px;
+            margin-left: 120px;
+        }
+        .search {
+            display: flex;
+            flex-direction: row;
+          .search-input{
+              width: 240px;
+              background-color: gray;
+              height: 40px;
+              border-color: black;
+              margin-top: 5px;
+              margin-left: 25px;
+              border-radius: 7px;
+              color: white;
+          }
+          .search-icon{
+              margin-top: 15px;
+              margin-left: 10px;
+              color: #fffdfd;
+              font-size: 120%;
+          }
+        }
+        .welcome-user{
+            color: white;
+            margin-top: 10px;
+            font-family: Graphik;
+            font-size: 17px;
+            margin-left: auto;
+            margin-right: 30px;
+        }
+        .logut {
+            margin-top: 10px;
+            background-color: #2c2f33;
+            border-color: #2c2f33;
+            border-radius: 3px;
+            color: white;
+            margin-left: auto;
+        }
+    }
+
+    .home-body{
+        display: flex;
+        flex-direction: column;
+        .home {
+            .ant-tabs-nav-wrap {
+                padding-top: 1rem;
+            }
+            .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+                color: black;
+            }
+            .ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active {
+                color:black
+            }
+        }
+    }
+}

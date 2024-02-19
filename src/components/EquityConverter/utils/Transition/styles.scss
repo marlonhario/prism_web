@@ -1,0 +1,35 @@
+.transition {
+  display: block;
+  &.width {
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    width: 0;
+    overflow-x: hidden;
+    &.show {
+      width: 100%;
+    }
+    &.right {
+      right: 0;
+      position: absolute;
+    }
+
+  }
+
+  &.height {
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0; 
+    &.show {
+      height: auto;
+      max-height: 100%;
+      &.reset {
+        max-height: 100%;
+      }
+    }
+  }
+}

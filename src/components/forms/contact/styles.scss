@@ -1,0 +1,219 @@
+.contact-input-base {
+  background-color: #36373D;
+  box-shadow: 1px 1px 2px rgba(76, 77, 85, 0.3), -1px -1px 2px rgba(32, 33, 37, 0.5), inset -1px 1px 2px rgba(32, 33, 37, 0.2), inset 1px -1px 2px rgba(32, 33, 37, 0.2), inset -1px -1px 2px rgba(76, 77, 85, 0.9), inset 1px 1px 3px rgba(32, 33, 37, 0.9);
+  border-radius: 15px;
+  color: #FFFFFF;
+
+  &.contact-input {
+    padding: 9px 18px;
+    height: 33px;
+    border-color: transparent;
+  }
+
+  &.contact-textarea {
+    border: none;
+    padding: 21px 18px;
+  }
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14.1796px;
+    line-height: 12px;
+    color: #FFFFFF;
+    transform: matrix(1, 0, 0.01, 1, 0, 0);
+  }
+}
+
+
+.contact-select {
+  >.ant-select-selector {
+    background-color: #C0C1C6 !important;
+    border: 0.506415px solid #C0C1C6 !important;
+    border-radius: 18.9905px !important;
+
+    >.ant-select-selection-placeholder {
+      display: flex;
+      align-items: center;
+      padding-left: 9px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14.1796px;
+      line-height: 15px;
+      text-align: center;
+
+      color: #474C55;
+
+      transform: matrix(1, 0, 0.01, 1, 0, 0);
+    }
+  }
+}
+
+.contact-select-dropdown {
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: transparent !important;
+  }
+}
+
+.contact-button-submit {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  color: #FFFFFF;
+  border: 0.5px solid #E5E5E5;
+  border-radius: 20.2566px;
+  background-color: transparent;
+  margin-top: 12px;
+  overflow: hidden;
+
+  >span {
+    margin-top: 2px;
+  }
+}
+
+.status-loader {
+  font-size: 2px;
+  flex-shrink: 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  border: 1px solid #a8a8a8;
+  border-left-color: #4f505a;
+  animation-name: loader-spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  &,
+  &:after {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+  }
+
+  &.success {
+    transition: border, opacity 500ms ease-out;
+    animation: none;
+    border-color: #0eaf7f;
+
+    span {
+      &:after {
+        content: '';
+        position: absolute;
+        top: 4em;
+        left: 1.8095238095em;
+        width: 2em;
+        height: 4em;
+        border-top: 1px solid #0eaf7f;
+        border-right: 1px solid #0eaf7f;
+        transform: scaleX(-1) rotate(135deg);
+        transform-origin: left top;
+        animation-name: checkmark;
+        animation-duration: 1.2s;
+        animation-timing-function: ease;
+        opacity: 1;
+      }
+    }
+  }
+
+  &.error {
+    transition: border, opacity 500ms ease-out;
+    animation: none;
+    border-color: #bb1903;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      &:before,
+      &:after {
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        content: '';
+        transform-origin: left top;
+        opacity: 1;
+        border-top: 1px solid #bb1903;
+        border-right: 1px solid #bb1903;
+        animation-name: crossmark;
+        animation-duration: 1.2s;
+        animation-timing-function: ease;
+      }
+
+      &:before {
+        top: -3px;
+        left: 2.5px;
+        transform: scaleX(-1) rotate(45deg);
+      }
+
+      &:after {
+        transform: scaleX(-1) rotate(225deg);
+        top: 3px;
+        left: -2.5px;
+      }
+    }
+  }
+
+  @keyframes loader-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes checkmark {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+
+    20% {
+      width: 2em;
+      height: 0;
+      opacity: 1;
+    }
+
+    40% {
+      width: 2em;
+      height: 4em;
+      opacity: 1;
+    }
+
+    100% {
+      width: 2em;
+      height: 4em;
+      opacity: 1;
+    }
+  }
+
+  @keyframes crossmark {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+
+    20% {
+      width: 2em;
+      height: 0;
+      opacity: 1;
+    }
+
+    40% {
+      width: 2em;
+      height: 2em;
+      opacity: 1;
+    }
+
+    100% {
+      width: 2em;
+      height: 2em;
+      opacity: 1;
+    }
+  }
+}

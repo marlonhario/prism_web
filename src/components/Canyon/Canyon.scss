@@ -1,0 +1,52 @@
+.green-overlay {
+  stroke: green;
+  font-size: 0.85rem;
+}
+
+.hover-value {
+  font-size: 0.85rem;
+}
+
+.area-right, .area-left  {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.hover-dashed-line {
+  stroke: #323232;
+  stroke-width: 2px;
+  stroke-dasharray: 6,6;
+}
+
+.canyon-hover-left circle, .canyon-hover-right circle {
+  fill: green;
+  stroke: black;
+}
+
+.pill {
+  font-size: 0.75rem;
+  color: white;
+  padding: 2px 3px;
+  border-radius: 6px;
+}
+
+.area-left {
+  fill: url(#area-left-chart);
+  stroke-width: 0px;
+}
+
+.area-right {
+  fill: url(#area-right-chart);
+  stroke-width: 0px;
+}
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+
+svg {
+  overflow: visible !important;
+}

@@ -1,0 +1,169 @@
+.markets-eta-container {
+  box-shadow: inset -5.37867px 5.37867px 10.7573px rgba(202, 202, 202, 0.2),
+    inset 5.37867px -5.37867px 10.7573px rgba(202, 202, 202, 0.2),
+    inset -5.37867px -5.37867px 10.7573px rgba(255, 255, 255, 0.9),
+    inset 5.37867px 5.37867px 13.4467px rgba(202, 202, 202, 0.9);
+}
+
+.markets-header {
+  background: linear-gradient(169.03deg,
+      rgba(255, 255, 255, 0.4) -0.81%,
+      rgba(255, 255, 255, 0) 136.27%);
+}
+
+.search-eta {
+  background: linear-gradient(135deg, #e8e8e8 0%, #ffffff 100%);
+  box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+
+.markets-table-header {
+  background: linear-gradient(0deg, #343741, #343741),
+    linear-gradient(0deg, #797d82, #797d82),
+    linear-gradient(169.03deg,
+      rgba(255, 255, 255, 0.4) -0.81%,
+      rgba(255, 255, 255, 0) 136.27%);
+  box-shadow: 0px -1px 30px rgba(71, 76, 85, 0.3);
+}
+
+.gray-background {
+  background: linear-gradient(248.38deg,
+      rgb(162, 164, 169) 35.08%,
+      rgb(128, 130, 136) 96.48%);
+}
+
+.alt-gray-background {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+// @mixin markets-zoom($breakpoint, $zoom) {
+//   @media (min-width: $breakpoint) {
+//     .markets-page-container {
+//       zoom: $zoom;
+//     }
+//   }
+// }
+
+// @include markets-zoom(1200px, 65%);
+// @include markets-zoom(1500px, 80%);
+// @include markets-zoom(1650px, 85%);
+// @include markets-zoom(1900px, 100%);
+// @include markets-zoom(2300px, 130%);
+// @include markets-zoom(3000px, 180%);
+@mixin markets-zoom($breakpoint, $zoom) {
+  @media (min-width: $breakpoint) {
+    .markets-table, .markets-tooltip {
+      zoom: $zoom;
+    }
+  }
+}
+
+@include markets-zoom(1200px, 80%);
+@include markets-zoom(1500px, 90%);
+@include markets-zoom(1600px, 100%);
+
+.markets-page-container {
+  .markets-switch {
+    background: #474c55;
+    box-shadow: 1px 1px 2px rgba(83, 89, 99, 0.3),
+      -1px -1px 2px rgba(59, 63, 71, 0.5),
+      inset -3px 3px 6px rgba(59, 63, 71, 0.2),
+      inset 3px -3px 6px rgba(59, 63, 71, 0.2),
+      inset -3px -3px 6px rgba(83, 89, 99, 0.9),
+      inset 3px 3px 8px rgba(59, 63, 71, 0.9);
+    height: 30px;
+    min-height: 30px;
+    width: 60px;
+
+    .ant-switch-handle {
+      width: 27px;
+      height: 27px;
+      top: 1px;
+
+      &::before {
+        border-radius: 100%;
+        background: linear-gradient(135deg, #595d65 0%, #63676f 100%);
+        box-shadow: -1px 1px 2px rgba(71, 74, 81, 0.2),
+          1px -1px 2px rgba(71, 74, 81, 0.2),
+          -1px -1px 2px rgba(117, 122, 131, 0.9),
+          1px 1px 3px rgba(71, 74, 81, 0.9);
+      }
+    }
+
+    &.ant-switch-checked {
+      background: white;
+      box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
+        -1px -1px 2px rgba(212, 212, 212, 0.5),
+        inset -3px 3px 6px rgba(212, 212, 212, 0.2),
+        inset 3px -3px 6px rgba(212, 212, 212, 0.2),
+        inset -3px -3px 6px rgba(255, 255, 255, 0.9),
+        inset 3px 3px 8px rgba(212, 212, 212, 0.9);
+
+      .ant-switch-handle {
+        right: 2px;
+        left: 30px;
+
+        &::before {
+          background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+          box-shadow: 1px 1px 2px rgba(192, 192, 192, 0.2),
+            -1px -1px 2px rgba(192, 192, 192, 0.2),
+            1px -1px 2px rgba(255, 255, 255, 0.9),
+            -1px 1px 3px rgba(192, 192, 192, 0.9);
+        }
+      }
+    }
+  }
+
+  .markets-page-dropdown {
+    border-radius: 1px !important;
+    box-shadow: -1px 1px 2px rgba(154, 156, 161, 0.2),
+      1px -1px 2px rgba(154, 156, 161, 0.2),
+      -1px -1px 2px rgba(178, 180, 185, 0.9),
+      1px 1px 3px rgba(154, 156, 161, 0.9),
+      inset 1px 1px 2px rgba(178, 180, 185, 0.3),
+      inset -1px -1px 2px rgba(154, 156, 161, 0.5);
+
+    .ant-select-selector {
+      border-radius: 1px !important;
+      border: 0.7px solid #8B8E94 !important;
+      background: linear-gradient(135deg, #9ea0a4 0%, #aeb0b6 100%);
+
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      ;
+
+      .ant-select-selection-placeholder {
+        color: white;
+      }
+    }
+  }
+
+  .markets-new-dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 1px !important;
+    // box-shadow: -1px 1px 2px rgba(154, 156, 161, 0.2),
+    //   1px -1px 2px rgba(154, 156, 161, 0.2),
+    //   -1px -1px 2px rgba(178, 180, 185, 0.9),
+    //   1px 1px 3px rgba(154, 156, 161, 0.9),
+    //   inset 1px 1px 2px rgba(178, 180, 185, 0.3),
+    //   inset -1px -1px 2px rgba(154, 156, 161, 0.5);
+    border: 0.7px solid #8B8E94 !important;
+    background: #a4a6ab;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    font-size: 14px;
+
+    option {
+      background: #a4a6ab;
+      box-shadow: -1px 1px 2px rgba(154, 156, 161, 0.2),
+        1px -1px 2px rgba(154, 156, 161, 0.2),
+        -1px -1px 2px rgba(178, 180, 185, 0.9),
+        1px 1px 3px rgba(154, 156, 161, 0.9),
+        inset 1px 1px 2px rgba(178, 180, 185, 0.3),
+        inset -1px -1px 2px rgba(154, 156, 161, 0.5);
+      font-size: 14px;
+    }
+  }
+}

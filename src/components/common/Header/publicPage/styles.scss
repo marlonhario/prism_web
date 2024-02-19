@@ -1,0 +1,29 @@
+.public-page-header-wrapper {
+  .back-btn {
+    box-shadow: inset -3px 3px 6px rgba(139, 140, 144, 0.2),
+      inset 3px -3px 6px rgba(139, 140, 144, 0.2),
+      inset -3px -3px 6px rgba(191, 194, 200, 0.9),
+      inset 3px 3px 8px rgba(139, 140, 144, 0.9);
+    border: 1px solid;
+
+    border-image-source: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      linear-gradient(
+        180deg,
+        rgba(164, 158, 153, 0) 0%,
+        #e5e5e5 58.33%,
+        #e5e5e5 100%
+      );
+  }
+}
+
+// @media (max-width: 565px) {
+//   .public-page-header-wrapper {
+//     flex-direction: column;
+//     margin-top: 35px;
+//     align-items: baseline;
+//   }
+// }

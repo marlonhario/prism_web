@@ -1,0 +1,14 @@
+.reinvestmentStrategy {
+  background-color: #f1f1f1;
+  .mySlider{
+    .ant-slider-rail{
+        background-color: #ddd;
+    }
+    .ant-slider-track{
+      background-color:gray;
+    }
+    .ant-slider-handle {
+      border: solid 2px gray;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.typography {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    cursor: pointer;
+
+    .text {
+        font-size: 23px;
+        font-weight: 200;
+        line-height: 29px;
+
+        &:first-child {
+            font-weight: 500;
+        }
+    }
+
+    .superscript {
+        font-weight: 500;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+}

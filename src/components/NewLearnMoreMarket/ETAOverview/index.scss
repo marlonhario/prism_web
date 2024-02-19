@@ -1,0 +1,490 @@
+.learn-more-market-eta-overview {
+
+  .learn-more-market-eta-overview-header {
+    background: radial-gradient(50.5% 50% at 49.48% 50%, #343741 0%, #343741 100%);
+
+    .overview-cube {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 40px;
+      left: 1px;
+      perspective: 100px;
+      transform-style: preserve-3d;
+
+      .cube-view {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 90px;
+        height: 20px;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0.25px;
+          width: 100%;
+          height: 100%;
+        }
+
+        &.top-view {
+          bottom: -9px;
+          transform: rotate(-45deg) skew(15deg, 15deg) translate(-0.5px, 0.15px) translateZ(1px);
+        }
+
+        &.right-view {
+          transform: rotate(-15deg) skew(-15deg, -15deg) translate(calc(50% - 0.5px), 100%) translateZ(1px);
+        }
+
+        &.left-view {
+          transform: rotate(15deg) skew(15deg, 15deg) translate(calc(-50% + 0.5px), 100%) translateZ(1px);
+        }
+      }
+    }
+
+
+    &.red {
+      &.growth {
+        color: #A94447;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #c94d50 30%, #b04043 55%, #8c2d30 80%, #7f272a 90%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(157.229deg, #58191a 42%, #672022 55.00000000000001%, #913538 82%, #a84145 95%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(209.057deg, #c14f55 2%, #b4484e 5%, #94373b 16%, #7b2a2c 27%, #692022 38%, #5e1a1c 50%, #5b191a 64%);
+              }
+            }
+          }
+        }
+      }
+
+      &.income {
+        color: #FCF4ED;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #f8ede1 30%, #e3d4c7 55%, #c6b1a3 80%, #bca596 90%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(155.213deg, #8a766b 26%, #917e73 36%, #a6948a 52%, #c7b9b0 71%, #e6dad2 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(209.057deg, #f6eee8 2%, #d4c8c0 11%, #b8a9a0 21%, #a29187 30%, #938075 41%, #89766a 51%, #877367 64%);
+              }
+            }
+          }
+        }
+      }
+
+      .overview-cube {
+        .cube-view {
+          &.top-view {
+            height: 90px;
+          }
+        }
+      }
+    }
+
+    &.green {
+      &.growth {
+        color: #CDEAE4;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              bottom: -7px;
+              transform: rotate(-45deg) skew(15deg, 15deg) translate(-1px, 1px) translateZ(1px);
+
+              &:before {
+                background-image: linear-gradient(135deg, #d0f2e1 34%, #b5d9c6 52%, #91baa2 80%, #84ae95 95%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(155.213deg, #5c7d6a 26%, #628572 36%, #759b89 52%, #92c0af 72%, #ade1d0 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(226.28deg, #c7f2e5 2%, #a6cebf 11%, #8aaf9f 20%, #749786 30%, #658674 40%, #5c7c69 51%, #597966 64%);
+              }
+            }
+          }
+        }
+      }
+
+      &.income {
+        color: #3D8E74;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #44866e 34%, #3f7d66 42%, #2c5947 76%, #254c3c 95%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(155.213deg, #183329 26%, #1b3b30 40%, #265244 63%, #34715f 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(226.28deg, #408974 2%, #326b5a 12%, #275244 24%, #1f4034 36%, #1a352b 49%, #193228 64%);
+              }
+            }
+          }
+        }
+      }
+
+      .overview-cube {
+        top: 0;
+
+        .cube-view {
+          &.top-view {
+            width: 20px;
+            height: 90px;
+          }
+
+          &.right-view {
+            width: 20px;
+            height: 90px;
+            bottom: 10.5px;
+            left: 22.25px;
+          }
+
+          &.left-view {
+            width: 90px;
+            height: 90px;
+            bottom: 10.5px;
+            left: -13.25px;
+          }
+        }
+      }
+    }
+
+    &.blue {
+      &.growth {
+        color: #CBEBF7;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #d3eaf5 39%, #b8cfdd 68%, #94adbd 87%, #87a0b2 102%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(155.213deg, #5d7282 26%, #637a8a 36%, #7790a1 52%, #95b5c7 71%, #b2d6e9 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(209.057deg, #caeaf6 2%, #acc8d5 10%, #8ea8b6 20%, #788f9d 30%, #677d8b 40%, #5e7281 51%, #5b6f7e 64%);
+              }
+            }
+          }
+        }
+      }
+
+      &.income {
+        color: #426299;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #546ba3 39%, #495d90 68%, #35446c 87%, #2e3b5f 102%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(157.229deg, #1e273f 26%, #212c47 38%, #2b3a5e 56.99999999999999%, #3a5184 80%, #405990 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(209.057deg, #4f6caa 2%, #476198 7.000000000000001%, #384c78 17%, #2c3b5f 28.000000000000004%, #24304d 39%, #1f2942 50%, #1e273f 64%);
+              }
+            }
+          }
+        }
+      }
+
+      .overview-cube {
+        .cube-view {
+          &.top-view {
+            height: 90px;
+          }
+        }
+      }
+    }
+
+    &.purple {
+      &.growth {
+        color: #CBEBF7;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #e2dcf0 34%, #c7c0d6 53%, #a49db5 80%, #978fa9 95%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(155.213deg, #6b667d 26%, #726e85 36%, #87849d 52%, #a8a7c2 72%, #c5c6e3 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(209.057deg, #dddff3 2%, #bdbdd1 10%, #9e9db1 20%, #868398 30%, #757186 40%, #6b667b 51%, #686378 64%);
+              }
+            }
+          }
+        }
+      }
+
+      &.income {
+        color: #426299;
+
+        .overview-cube {
+          .cube-view {
+            &.top-view {
+              &:before {
+                background-image: linear-gradient(135deg, #8472bd 34%, #7161a4 51%, #564981 80%, #4c4073 95%);
+              }
+            }
+
+            &.right-view {
+              &:before {
+                background-image: linear-gradient(157.229deg, #332b51 26%, #383059 37%, #463e71 55.00000000000001%, #5d5596 77%, #6860a9 87%);
+              }
+            }
+
+            &.left-view {
+              &:before {
+                background-image: linear-gradient(157.229deg, #332b51 26%, #383059 37%, #463e71 55.00000000000001%, #5d5596 77%, #6860a9 87%);
+              }
+            }
+          }
+        }
+      }
+
+      .overview-cube {
+        .cube-view {
+          &.top-view {
+            height: 90px;
+          }
+        }
+      }
+    }
+
+    .learn-more-market-eta-overview-header-overview {
+      .learn-more-market-eta-overview-header-overview-info {
+
+        &.expanded {
+          >.border-color {
+            bottom: -30px;
+          }
+        }
+
+        &.collapse {
+          >.border-color {
+            top: 30px;
+          }
+        }
+
+        >.border-color {
+          position: absolute;
+          right: -30px;
+          left: -30px;
+          width: calc(100% + 60px);
+          height: 1px;
+
+          svg {
+            width: 100%;
+            height: 10px;
+          }
+        }
+
+        &.expanded,
+        &.collapse {
+          >div {
+            .border-color {
+              content: '';
+              display: flex;
+              align-items: center;
+              position: absolute;
+              width: 1px;
+              height: 100%;
+
+              svg {
+                width: 70px;
+                height: 70px;
+              }
+
+              &.border-right {
+                right: -15px;
+              }
+
+              &.border-left {
+                left: -15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .learn-more-market-eta-overview-controls {
+    flex: 0 0 61px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(50.5% 50% at 49.48% 50%, #343741 0%, #343741 100%);
+
+    .see-maturity-timeline {
+      border: 1px solid #ffffff;
+      border-radius: 17.7201px;
+      cursor: pointer;
+    }
+
+    .add-to-portfolio {
+      background: linear-gradient(135deg, #474C55 0%, #7F8389 100%);
+      border: 0.674074px solid #797D82;
+      box-shadow: -1px 1px 2px rgba(48, 50, 52, 0.2), 1px -1px 2px rgba(48, 50, 52, 0.2), -1px -1px 2px rgba(194, 200, 210, 0.9), 1px 1px 3px rgba(48, 50, 52, 0.9);
+      border-radius: 26.963px;
+      cursor: pointer;
+    }
+  }
+
+  .learn-more-market-eta-overview-texts {
+    width: 80%;
+    padding: 37px 0 33px;
+    margin: auto;
+    color: #ffffff;
+
+    .learn-more-market-eta-overview-texts-header {
+
+      &.red {
+        &.growth {
+          color: #A94447;
+        }
+
+        &.income {
+          color: #EBDFD7;
+        }
+      }
+
+      &.green {
+        &.growth {
+          color: #CDEAE4;
+        }
+
+        &.income {
+          color: #3D8E74;
+        }
+      }
+
+      &.blue {
+        &.growth {
+          color: #B1D6E8;
+        }
+
+        &.income {
+          color: #426299;
+        }
+      }
+
+      &.purple {
+        &.growth {
+          color: #DFE0F1;
+        }
+
+        &.income {
+          color: #7268AF;
+        }
+      }
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-bottom: 15px;
+      letter-spacing: 0.1em;
+
+      &:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .learn-more-market-eta-overview-footer-table {
+
+    .learn-more-market-eta-overview-footer-table-header {
+      align-items: center;
+      box-shadow: inset -1px 1px 2px rgba(62, 64, 68, 0.2), inset 1px -1px 2px rgba(62, 64, 68, 0.2), inset -1px -1px 2px rgba(128, 134, 142, 0.9), inset 1px 1px 3px rgba(62, 64, 68, 0.9);
+    }
+
+    .learn-more-market-eta-overview-footer-table-header,
+    .learn-more-market-eta-overview-footer-table-body {
+      display: grid;
+      grid-template-columns: 14% 20% 26% 20% 10% 10%;
+      padding: 0 10px;
+
+      div {
+        padding: 8px 10px;
+      }
+
+      &.resize {
+        font-size: 13px;
+        padding: 0 5px;
+
+        div {
+          padding: 8px 5px
+        }
+      }
+
+      &.resize-cols {
+        grid-template-columns: 14% 20% 20% 20% 13% 13%;
+
+        div {
+          padding: 8px 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@media (max-width: 770px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .underlying-security-col {
+    width: 28%;
+    padding-left: 2px;
+    padding-right: 0px;
+  }
+
+  .last-price-col,
+  .change-col, 
+  .divident-yield-col,
+  .dividend-payout-ratio-col {
+    width: 18%;
+  }
+}

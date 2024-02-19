@@ -1,0 +1,98 @@
+.learn-more-market-slider-right {
+  >* {
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+  }
+
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 125px;
+  height: 35px;
+  margin-left: -1px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  cursor: pointer;
+
+  .learn-more-market-slider-right-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    appearance: none;
+    z-index: 3;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 30px;
+      height: 35px;
+      border: none;
+      box-shadow: none;
+      background: none;
+      appearance: none;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 30px;
+      height: 35px;
+      border: none;
+      box-shadow: none;
+      background: none;
+      appearance: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.learn-more-market-slider-right-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+
+  .learn-more-market-slider-right-trackThumb {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    right: -18px;
+    flex-shrink: 0;
+    width: 36px;
+    height: 100%;
+
+    .learn-more-market-slider-right-trackThumb-pointer {
+      width: 15px;
+      height: 19px;
+      background: #FFFFFF;
+      border: 0.5px solid #FFFFFF;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), inset -5px 5px 10px rgba(78, 92, 97, 0.2), inset 5px -5px 10px rgba(78, 92, 97, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(78, 92, 97, 0.9);
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      cursor: pointer;
+
+      svg {
+        position: absolute;
+        left: -1px;
+        bottom: 14px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.learn-more-market-slider-right-range {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}

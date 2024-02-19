@@ -1,0 +1,672 @@
+.learn-more-market-eta-diagram {
+  height: 1px;
+  min-height: 250px;
+
+  .learn-more-market-eta-chart {
+    background: radial-gradient(100.4% 250.78% at 0% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 255, 255, 0.05);
+
+    &.red {
+      &.growth {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(180deg, #A94447 0.61%, #551919 100.58%);
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #FCF4ED -0.45%, #C1AA9F 93.76%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #A94447;
+              box-shadow: inset -2px 2px 4px rgba(139, 56, 58, 0.2), inset 2px -2px 4px rgba(139, 56, 58, 0.2), inset -2px -2px 4px rgba(199, 80, 84, 0.9), inset 2px 2px 5px rgba(139, 56, 58, 0.9);
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: linear-gradient(180deg, #FCF4ED -0.45%, #C1AA9F 93.76%);
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #A94447 0.61%, #551919 100.58%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+              background: repeating-linear-gradient(135deg,
+                  #FF0000,
+                  #FF0000 10px,
+                  #FF8080 10px,
+                  #FF8080 20px);
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: linear-gradient(180deg, #A94447 0.61%, #551919 100.58%);
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #A94447;
+              box-shadow: inset -2px 2px 4px rgba(139, 56, 58, 0.2), inset 2px -2px 4px rgba(139, 56, 58, 0.2), inset -2px -2px 4px rgba(199, 80, 84, 0.9), inset 2px 2px 5px rgba(139, 56, 58, 0.9);
+            }
+          }
+        }
+      }
+
+      &.income {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(180deg, #A94447 0.61%, #551919 100.58%);
+                opacity: 0.5;
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #C1AA9F -0.45%, #FCF4ED 93.76%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #FCF4ED;
+              box-shadow: inset -2px 2px 4px rgba(207, 200, 194, 0.2), inset 2px -2px 4px rgba(207, 200, 194, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.9), inset 2px 2px 5px rgba(207, 200, 194, 0.9);
+              color: #474C55;
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: linear-gradient(180deg, #C1AA9F -0.45%, #FCF4ED 93.76%);
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #A94447 0.61%, #551919 100.58%);
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+              background: repeating-linear-gradient(135deg,
+                  #FF0000,
+                  #FF0000 10px,
+                  #FF8080 10px,
+                  #FF8080 20px);
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: #C0C1C6;
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #FCF4ED;
+              box-shadow: inset -2px 2px 4px rgba(207, 200, 194, 0.2), inset 2px -2px 4px rgba(207, 200, 194, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.9), inset 2px 2px 5px rgba(207, 200, 194, 0.9);
+              color: #474C55;
+            }
+          }
+        }
+      }
+    }
+
+    &.green {
+      &.growth {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(90deg, #205544 50%, #CDEAE4 50%);
+              }
+
+              &:last-child {
+                background: linear-gradient(90deg, #205544 50%, #CDEAE4 50%);
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  background-color: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                }
+              }
+
+              .learn-more-market-slider-left-trackThumb {
+                &:before {
+                  content: '';
+                  position: absolute;
+                  right: 50%;
+                  width: 1px;
+                  height: 100%;
+                  background-color: #FFFFFF;
+                }
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #CDEAE4;
+              box-shadow: inset -2px 2px 4px rgba(168, 192, 187, 0.2), inset 2px -2px 4px rgba(168, 192, 187, 0.2), inset -2px -2px 4px rgba(242, 255, 255, 0.9), inset 2px 2px 5px rgba(168, 192, 187, 0.9);
+              color: #474C55;
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: conic-gradient(from 180deg at 50% 48.04%, #CDEAE4 0deg, #CDEAE4 112.5deg, #205544 360deg);
+              }
+
+              &:last-child {
+                background: conic-gradient(from 180deg at 50% 48.04%, #CDEAE4 0deg, #CDEAE4 112.5deg, #205544 360deg);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+
+              &:before,
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+              }
+
+              &:before {
+                right: 50%;
+                background: repeating-linear-gradient(135deg,
+                    #FF0000,
+                    #FF0000 10px,
+                    #FF8080 10px,
+                    #FF8080 20px);
+              }
+
+              &:after {
+                background: repeating-linear-gradient(135deg,
+                    #404146,
+                    #404146 10px,
+                    #9D9FA1 10px,
+                    #9D9FA1 20px);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: #CDEAE4;
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #CDEAE4;
+              box-shadow: inset -2px 2px 4px rgba(168, 192, 187, 0.2), inset 2px -2px 4px rgba(168, 192, 187, 0.2), inset -2px -2px 4px rgba(242, 255, 255, 0.9), inset 2px 2px 5px rgba(168, 192, 187, 0.9);
+              color: #474C55;
+            }
+          }
+        }
+      }
+
+      &.income {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(90deg, #205544 50%, #CDEAE4 50%);
+              }
+
+              &:last-child {
+                background: linear-gradient(90deg, #205544 50%, #CDEAE4 50%);
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  background-color: rgba(255, 255, 255, 0.1);
+                  backdrop-filter: blur(10px);
+                }
+              }
+
+              .learn-more-market-slider-left-trackThumb {
+                &:before {
+                  content: '';
+                  position: absolute;
+                  right: 50%;
+                  width: 1px;
+                  height: 100%;
+                  background-color: #FFFFFF;
+                }
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #205544;
+              box-shadow: inset -2px 2px 4px rgba(26, 70, 56, 0.2), inset 2px -2px 4px rgba(26, 70, 56, 0.2), inset -2px -2px 4px rgba(38, 100, 80, 0.9), inset 2px 2px 5px rgba(26, 70, 56, 0.9);
+
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: conic-gradient(from 180deg at 50% 48.04%, #CDEAE4 0deg, #CDEAE4 112.5deg, #205544 360deg);
+              }
+
+              &:last-child {
+                background: conic-gradient(from 180deg at 50% 48.04%, #CDEAE4 0deg, #CDEAE4 112.5deg, #205544 360deg);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+
+              &:before,
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+              }
+
+              &:before {
+                right: 50%;
+                background: repeating-linear-gradient(135deg,
+                    #FF0000,
+                    #FF0000 10px,
+                    #FF8080 10px,
+                    #FF8080 20px);
+              }
+
+              &:after {
+                background: repeating-linear-gradient(135deg,
+                    #404146,
+                    #404146 10px,
+                    #9D9FA1 10px,
+                    #9D9FA1 20px);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: #CDEAE4;
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #205544;
+              box-shadow: inset -2px 2px 4px rgba(26, 70, 56, 0.2), inset 2px -2px 4px rgba(26, 70, 56, 0.2), inset -2px -2px 4px rgba(38, 100, 80, 0.9), inset 2px 2px 5px rgba(26, 70, 56, 0.9);
+            }
+          }
+        }
+      }
+    }
+
+    &.blue {
+      &.growth {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(0deg, #426299 1.39%, #1A2741 101.85%);
+                opacity: 0.5;
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #8EA9BA 0.58%, #CBEBF7 96.61%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #ADCAD9;
+              box-shadow: inset -2px 2px 4px rgba(142, 166, 178, 0.2), inset 2px -2px 4px rgba(142, 166, 178, 0.2), inset -2px -2px 4px rgba(204, 238, 255, 0.9), inset 2px 2px 5px rgba(142, 166, 178, 0.9);
+              color: #474C55;
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: linear-gradient(0deg, #426299 1.39%, #1A2741 101.85%);
+                opacity: 0.5;
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #8EA9BA 0.58%, #CBEBF7 96.61%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+              height: auto;
+              background: repeating-linear-gradient(135deg,
+                  #FF0000,
+                  #FF0000 10px,
+                  #FF8080 10px,
+                  #FF8080 20px);
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: linear-gradient(180deg, #8EA9BA 0.58%, #CBEBF7 96.61%);
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #ADCAD9;
+              box-shadow: inset -2px 2px 4px rgba(142, 166, 178, 0.2), inset 2px -2px 4px rgba(142, 166, 178, 0.2), inset -2px -2px 4px rgba(204, 238, 255, 0.9), inset 2px 2px 5px rgba(142, 166, 178, 0.9);
+              color: #474C55;
+            }
+          }
+        }
+      }
+
+      &.income {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(0deg, #426299 1.39%, #1A2741 101.85%);
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #8EA9BA 0.58%, #CBEBF7 96.61%);
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #426299;
+              box-shadow: inset -2px 2px 4px rgba(54, 80, 125, 0.2), inset 2px -2px 4px rgba(54, 80, 125, 0.2), inset -2px -2px 4px rgba(78, 116, 181, 0.9), inset 2px 2px 5px rgba(54, 80, 125, 0.9);
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: linear-gradient(0deg, #426299 1.39%, #1A2741 101.85%);
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #8EA9BA 0.58%, #CBEBF7 96.61%);
+                opacity: 0.5;
+
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+              background: repeating-linear-gradient(135deg,
+                  #FF0000,
+                  #FF0000 10px,
+                  #FF8080 10px,
+                  #FF8080 20px);
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: #C0C1C6;
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #426299;
+              box-shadow: inset -2px 2px 4px rgba(54, 80, 125, 0.2), inset 2px -2px 4px rgba(54, 80, 125, 0.2), inset -2px -2px 4px rgba(78, 116, 181, 0.9), inset 2px 2px 5px rgba(54, 80, 125, 0.9);
+            }
+          }
+        }
+      }
+    }
+
+    &.purple {
+      &.growth {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(270deg, #7268AF 1.61%, #7268AF 2.59%, #342C53 99.88%);
+                opacity: 0.5;
+              }
+
+              &:last-child {
+                background: linear-gradient(270deg, #A198B2 -1.45%, #DFE0F1 101.64%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #BDBED8;
+              box-shadow: inset -2px 2px 4px rgba(155, 156, 177, 0.2), inset 2px -2px 4px rgba(155, 156, 177, 0.2), inset -2px -2px 4px rgba(223, 224, 255, 0.9), inset 2px 2px 5px rgba(155, 156, 177, 0.9);
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: linear-gradient(180deg, #7268AF 1.61%, #7268AF 2.59%, #342C53 99.88%);
+                opacity: 0.5;
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #A198B2 -1.45%, #DFE0F1 101.64%);
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+              background: repeating-linear-gradient(135deg,
+                  #FF0000,
+                  #FF0000 10px,
+                  #FF8080 10px,
+                  #FF8080 20px);
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: conic-gradient(from 180deg at 50% 48.04%, #BDBED8 0deg, #DFE0F1 110.62deg, rgba(192, 193, 198, 0) 360deg);
+              transform: scaleX(-1);
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              background: #BDBED8;
+              box-shadow: inset -2px 2px 4px rgba(155, 156, 177, 0.2), inset 2px -2px 4px rgba(155, 156, 177, 0.2), inset -2px -2px 4px rgba(223, 224, 255, 0.9), inset 2px 2px 5px rgba(155, 156, 177, 0.9);
+            }
+          }
+        }
+      }
+
+      &.income {
+        .learn-more-market-eta-chart-slider-left {
+          .learn-more-market-eta-chart-maturity-establishment {
+            div {
+              &:first-child {
+                background: linear-gradient(270deg, #7268AF 1.61%, #7268AF 2.59%, #342C53 99.88%);
+              }
+
+              &:last-child {
+                background: linear-gradient(270deg, #DFE0F1 -1.45%, #A198B2 101.64%);
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-left-indicator {
+            >span:first-child {
+              background: #7268AF;
+              box-shadow: inset -2px 2px 4px rgba(93, 85, 144, 0.2), inset 2px -2px 4px rgba(93, 85, 144, 0.2), inset -2px -2px 4px rgba(135, 123, 207, 0.9), inset 2px 2px 5px rgba(93, 85, 144, 0.9);
+            }
+          }
+        }
+
+        .learn-more-market-eta-chart-slider-right {
+          .learn-more-market-eta-chart-maturity-original {
+            div {
+              &:first-child {
+                background: linear-gradient(180deg, #7268AF 1.61%, #7268AF 2.59%, #342C53 99.88%);
+              }
+
+              &:last-child {
+                background: linear-gradient(180deg, #DFE0F1 -1.45%, #A198B2 101.64%);
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-loss {
+            div {
+              background: repeating-linear-gradient(135deg,
+                  #FF0000,
+                  #FF0000 10px,
+                  #FF8080 10px,
+                  #FF8080 20px);
+            }
+          }
+
+          .learn-more-market-eta-chart-maturity-upside {
+            div {
+              background: conic-gradient(from 180deg at 50% 48.04%, rgba(192, 193, 198, 0) 0deg, #C0C1C6 112.5deg, #342C53 360deg);
+            }
+          }
+
+          .learn-more-market-eta-chart-slider-right-indicator {
+            >span:last-child {
+              order: -1;
+              background: #7268AF;
+              box-shadow: inset -2px 2px 4px rgba(93, 85, 144, 0.2), inset 2px -2px 4px rgba(93, 85, 144, 0.2), inset -2px -2px 4px rgba(135, 123, 207, 0.9), inset 2px 2px 5px rgba(93, 85, 144, 0.9);
+            }
+          }
+        }
+      }
+    }
+
+    .learn-more-market-eta-chart-slider-left-indicator {
+      cursor: pointer;
+    }
+
+    .learn-more-market-eta-chart-slider-right-indicator {
+      cursor: pointer;
+    }
+
+    .learn-more-market-chart-dividends-forecast {
+      div {
+        span {
+          &:first-child {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+          }
+
+          &:last-child {
+            display: none;
+            background: #343741;
+          }
+        }
+      }
+
+      &.red {
+        span:first-child {
+          background: linear-gradient(180deg, #FCF4ED -0.45%, #C1AA9F 93.76%);
+        }
+      }
+
+      &.green {
+        span:first-child {
+          background: linear-gradient(180deg, #3D8E74 -0.42%, #205544 96.57%);
+        }
+      }
+
+      &.blue {
+        span:first-child {
+          background: linear-gradient(0deg, #426299, #426299), #5F6369;
+        }
+      }
+
+      &.purple {
+        span:first-child {
+          background: linear-gradient(180deg, #7268AF 1.61%, #7268AF 2.59%, #342C53 99.88%);
+        }
+      }
+    }
+
+    .learn-more-market-chart-xaxis {
+      span {
+
+        &:first-child,
+        &:last-child {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .learn-more-market-chart-divider {
+      background: linear-gradient(180deg, #E5E5E5 0%, rgba(255, 255, 255, 0) 100%),
+        radial-gradient(100.4% 250.78% at 0% 0%, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        ,
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+      // z-index: 1;
+    }
+  }
+}

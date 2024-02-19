@@ -1,0 +1,47 @@
+.no-dividend {
+  background: radial-gradient(100.4% 250.78% at 0% 0%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%),
+    rgba(255, 255, 255, 0.05);
+  border: 0.5px solid;
+  border-image-source: linear-gradient(180deg,
+      #e5e5e5 0%,
+      rgba(255, 255, 255, 0) 100%);
+}
+
+.growth-chart {
+  background: url('../assets/svg/growth-chart-bg.svg');
+  background-size: 250px;
+  background-repeat: no-repeat;
+}
+
+.target-bid-btn {
+  background: #979a9e;
+  border: 1px solid #ffffff;
+  border-radius: 14.15px;
+}
+
+.matched-offer-btn {
+  background: rgba(192, 193, 198, 0.5);
+  border: 1px solid transparent;
+  border-radius: 14.15px;
+}
+
+.div-bar-chart {
+  background: radial-gradient(150.61% 103.84% at 16.67% 15%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%),
+    rgba(255, 255, 255, 0.05);
+}
+
+.bar-reference-line tspan {
+  fill: white;
+}
+
+.yield-graph .recharts-surface .recharts-bar {
+  transform: scaleX(.95);
+}
+
+.recharts-tooltip-cursor {
+  fill: transparent;
+}

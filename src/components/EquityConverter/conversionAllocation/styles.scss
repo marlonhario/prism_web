@@ -1,0 +1,37 @@
+.conversion-allocation {
+  .title {
+    font-weight: 300;
+    font-size: 17px;
+    color: #000;
+  }
+  .cash-returned {
+    font-size: 18px;
+    color: #2C2F33;
+  }
+  .growth-title, .income-title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .growth-holding, .income-holding {
+    font-size: 14px;
+    color: #2C2F33;
+  }
+  .order-form-button .ant-btn-primary {
+    border: 0.5px solid #5A6267;
+    backdrop-filter: blur(45px);
+    color: #5A6267;
+    background: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    &[disabled] {
+      color: #fff;
+    }
+  }
+  .chart-container {
+    width: 100%;
+    height:20px;
+    canvas {
+      width: 100% !important;
+    }
+  }
+}

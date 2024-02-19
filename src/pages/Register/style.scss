@@ -1,0 +1,117 @@
+.register-container {
+    width: 100%;
+    .register-body {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      .left {
+        width: 50%;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        background: #ececec;
+        .left-header {
+          margin-top: 15px;
+          .prism-header {
+            margin-left: 50px;
+          }
+        }
+        .center-layout {
+          justify-content: center;
+          width: 450px;
+          height: 500px;
+          margin-top: 95px;
+          margin-left: auto;
+          align-items: center;
+          background: #f7f7f7;
+          .register-top-header {
+            font-family: Graphik;
+            font-size: 28px;
+            margin-left: 30px;
+            margin-top: 20px;
+          }
+  
+          .username {
+            width: 80%;
+            margin-left: 30px;
+          }
+          .passowrd {
+            width: 80%;
+            margin-left: 30px;
+          }
+  
+          .register-button {
+            width: 100px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: grey;
+            border-color: #737477;
+          }
+  
+  
+          .sign-in-header {
+            font-family: Graphik;
+            font-size: 17px;
+            color: grey;
+            margin-left: 35px;
+            margin-top: 40px;
+            .sign-in-button{
+              font-size: 17px;
+            }
+          }
+        }
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        height: 750px;
+        flex-direction: column;
+        background: #000000;
+        .right-header {
+          display: flex;
+          flex-direction: row-reverse;
+          margin-top: 15px;
+          .work-header {
+            color: orange;
+            padding-right: 5px;
+            font-size: 16px;
+            font-family: "Graphik";
+          }
+          .prism-header {
+            color: white;
+            padding-right: 50px;
+            font-size: 16px;
+            font-family: "Graphik";
+          }
+        }
+        .center-layout {
+          width: 420px;
+          height: 500px;
+          margin-top: 93px;
+          align-items: center;
+          background-image: url("../../assets/images/graphic-prism.png");
+        }
+      }
+    }
+    .login-footer {
+      .content {
+        display: inline-block;
+        width: 40%;
+        font-family: Graphik;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 50px;
+        color: #7a7a7a;
+        margin-top: 10px;
+      }
+      .general-enquires {
+          font-weight: bold;
+          font-size: 16px;
+      }
+    }
+  }
+  

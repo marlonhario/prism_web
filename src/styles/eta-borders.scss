@@ -1,0 +1,102 @@
+@mixin border-color($name, $color, $gradient, $radial) {
+  .border-#{$name} {
+    border-color: $color;
+  }
+
+  .checkbox-#{$name} {
+    box-shadow: 0px 0px 0px 1px $color;
+  }
+
+  .radial-background-#{$name} {
+    background: $radial;
+  }
+
+  .custom-border-#{$name} {
+    background: $gradient !important;
+  }
+}
+
+@include border-color(
+  'MaxGrowth',
+  #cbebf7,
+  linear-gradient(130.53deg, #cbebf7 0%, #8ea9ba 100%),
+  (
+    radial-gradient(
+      123.19% 296.68% at 7.43% 9.42%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(203, 235, 247, 0.15)
+  )
+);
+@include border-color(
+  'PureGrowth',
+  #cce9e3,
+  linear-gradient(90deg, #5c8370 45.83%, #cce9e3 100%),
+  (
+    radial-gradient(
+      123.19% 296.68% at 7.43% 9.42%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(204, 233, 227, 0.15)
+  )
+);
+@include border-color(
+  'GrowthGuard',
+  #a94447,
+  linear-gradient(130.53deg, #726a6a 0%, #a94447 53.65%),
+  (
+    radial-gradient(
+      123.19% 296.68% at 7.43% 9.42%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(169, 68, 71, 0.15)
+  )
+);
+@include border-color(
+  'MaxDiv',
+  #f3dbd5,
+  linear-gradient(130.53deg, #fcf4ed 15.1%, #c1aba0 100%),
+  (
+    radial-gradient(
+      123.19% 296.68% at 7.43% 9.42%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(247, 246, 228, 0.15)
+  )
+);
+@include border-color(
+  'PureDiv',
+  #3d8e74,
+  linear-gradient(270deg, #3d8e74 0%, #205544 100%),
+  (
+    radial-gradient(
+      123.19% 296.68% at 7.43% 9.42%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(61, 142, 116, 0.15)
+  )
+);
+@include border-color(
+  'DivGuard',
+  #426299,
+  linear-gradient(130.53deg, #1a2741 0%, #426299 50.52%),
+  (
+    radial-gradient(
+      123.19% 296.68% at 7.43% 9.42%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(66, 98, 153, 0.15)
+  )
+);
+
+.eta-label {
+  input {
+    accent-color: #b4b6bd;
+  }
+}

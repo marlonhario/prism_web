@@ -1,0 +1,38 @@
+.public-bg {
+  background-image: url('../../../assets/svg/public-page-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-main-container {
+  flex: 0 1 30px;
+}
+
+@media (max-width: 670px) {
+  .public-bg {
+    background: radial-gradient(99.63% 174.49% at 59.95% 29.26%, #C0C1C6 0%, #343741 80.68%), radial-gradient(121.94% 121.94% at 73.26% 12.45%, #C0C1C6 0%, #5F6369 100%)
+  }
+
+  .sm\:h-public-content-desktop {
+    flex-direction: column;
+    height: calc(100% - 50px - 50px);
+    .w-1\/5 {
+      width: 100%;
+    }
+
+    .w-3\/5 {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .footer-main-container {
+    flex: 0 1 120px;
+    // background: #71747b;
+  }
+
+  .content-main-container {
+    height: auto !important;
+  }
+}

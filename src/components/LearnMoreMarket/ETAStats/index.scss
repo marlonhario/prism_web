@@ -1,0 +1,22 @@
+.learnmore-market-eta-stats {
+  .learnmore-market-eta-stats-titles {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 4%;
+
+    span {
+      font-size: 10px;
+      line-height: 13px;
+      padding: 2px 2.5%;
+      letter-spacing: 0.1em;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+
+  .learnmore-market-eta-stats-panels {
+    padding: 2% 5%;
+  }
+}

@@ -1,0 +1,64 @@
+.introLightBox-component {
+  overflow: hidden;
+
+  .lb-nav-active-index {
+    background-color: rgba(255, 255, 255, .3);
+  }
+
+  .highlight-on-hover {
+    transition: all .15s linear;
+
+    &:hover {
+      filter: drop-shadow(0mm 0mm 3mm rgb(255, 255, 255));
+    }
+  }
+
+  .lb-slider-image-root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    >.ant-image-placeholder {
+      width: 100%;
+
+      >.lb-image-placeholder {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >.lb-image-placeholder-blur {
+          display: none;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          filter: blur(6px);
+          background-color: rgba(255, 255, 255, .6);
+        }
+
+        >.ant-spin.ant-spin-lg.ant-spin-spinning {
+          position: relative;
+          height: 32px;
+
+          >.ant-spin-dot.ant-spin-dot-spin {
+            font-size: 66px;
+
+            >.ant-spin-dot-item {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          .ant-spin-dot-item {
+            background-color: #fff;
+          }
+        }
+      }
+
+    }
+  }
+}

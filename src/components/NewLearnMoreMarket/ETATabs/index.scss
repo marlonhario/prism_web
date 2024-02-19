@@ -1,0 +1,25 @@
+.learn-more-market-secondary-tabbar-titles {
+  .learn-more-market-secondary-tabbar-title {
+    border: 0.5px solid transparent;
+    border-radius: 20px;
+    transition: all 300ms ease;
+    cursor: pointer;
+
+    &.active {
+      background: #797D82;
+      border: 0.5px solid #797D82;
+      box-shadow: inset -1px 1px 2px rgba(68, 70, 73, 0.2), inset 1px -1px 2px rgba(68, 70, 73, 0.2), inset -1px -1px 2px rgba(174, 180, 187, 0.9), inset 1px 1px 3px rgba(68, 70, 73, 0.9);
+    }
+
+    &:hover:not(.active) {
+      text-decoration-line: underline;
+      text-underline-offset: 4px;
+    }
+  }
+}
+
+.learn-more-market-secondary-tabbar-panel {
+  flex: 0 0 calc(100% - 40px);
+  height: calc(100% - 40px);
+  overflow: auto;
+}

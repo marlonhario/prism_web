@@ -1,0 +1,24 @@
+.header-link {
+  &.active {
+    box-shadow: inset -3px 3px 6px rgba(139, 140, 144, 0.2),
+      inset 3px -3px 6px rgba(139, 140, 144, 0.2),
+      inset -3px -3px 6px rgba(191, 194, 200, 0.9),
+      inset 3px 3px 8px rgba(139, 140, 144, 0.9);
+    border: none;
+  }
+
+}
+
+.arrow {
+  border: dashed white;
+  border-width: 0 1px 1px 0;
+  width: 28px;
+  height: 28px;
+  margin-left: -14px;
+  align-self: center;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

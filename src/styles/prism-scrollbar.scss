@@ -1,0 +1,60 @@
+.prism-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  border-bottom: solid 1px #999999;
+}
+
+.prism-scrollbar::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,
+      transparent 49%,
+      #999999 52%,
+      transparent 51%,
+      transparent 100%);
+  width: 1px;
+}
+
+// .prism-scrollbar::-webkit-scrollbar-thumb {
+//   background-image: url('../assets/svg/scrollbar-thumb.svg');
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   height: 30px;
+// }
+
+.prism-scrollbar-markets::-webkit-scrollbar {
+  width: 10px;
+  border-bottom: none;
+  // background: #888a8f;
+}
+
+// .prism-scrollbar-markets::-webkit-scrollbar-track {
+//   background: linear-gradient(
+//     90deg,
+//     transparent 49%,
+//     #343741 52%,
+//     transparent 51%,
+//     transparent 100%
+//   );
+//   width: 1px;
+// }
+
+.prism-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #474c55;
+  border: 1px solid white;
+  box-shadow: -1px 1px 2px rgba(51, 54, 64, 0.2),
+    1px -1px 2px rgba(51, 54, 64, 0.2);
+  border-radius: 8px;
+}
+
+.about-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
+
+.prism-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #474c55 rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 1020px) {
+  .prism-scrollbar-markets::-webkit-scrollbar {
+    width: 0px;
+  }
+}

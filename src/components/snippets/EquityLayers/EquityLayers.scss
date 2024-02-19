@@ -1,0 +1,26 @@
+.eta-layer {
+  &__DivGuard {
+    background: linear-gradient(261.57deg, #426299 8.48%, #1A2741 91.47%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__PureDiv {
+    background: linear-gradient(261.57deg, #3D8E74 8.48%, #205544 91.47%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__MaxDiv {
+    background: linear-gradient(134.64deg, rgba(0, 0, 0, 0.3) 16.94%, rgba(0, 0, 0, 0) 83.58%), linear-gradient(116.44deg, #BCA596 17.3%, #F8EDE1 78.29%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  &__GrowthGuard {
+    background: linear-gradient(132.41deg, rgba(0, 0, 0, 0.3) 16.27%, rgba(0, 0, 0, 0) 83.23%), linear-gradient(123.95deg, #551919 28.02%, #A94447 64.89%);
+    transform: rotate(-180deg);
+  }
+  &__PureGrowth {
+    background: linear-gradient(130.53deg, #5C8370 4.17%, #CCE9E3 100%);
+    transform: rotate(-180deg);
+  }
+  &__MaxGrowth {
+    background: linear-gradient(124.34deg, #B1D6E8 47.71%, #CBEBF7 77.88%);
+    transform: rotate(-180deg);
+  }
+}

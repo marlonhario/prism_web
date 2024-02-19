@@ -1,0 +1,52 @@
+name: Production workflow for S3 Deploy and Cloudfront Invalidate
+on:
+  # Trigger the workflow on push or pull request on staging
+  push:
+    branches:
+      - production
+jobs:
+  build-deploy-production-static-web:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 16
+
+        - name: Configure AWS credentials
+          uses: aws-actions/configure-aws-credentials@v1
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+        - name: Install dependencies
+          run: npm install --legacy-peer-deps
+
+        - name: Build
+          run: npm run build
+
+        - name: Zip Files for Artifact
+          run: zip production-artifacts-${{ github.run_number }}.zip ./build/* -r
+
+        - name: Store Artifacts in S3
+          run: aws s3 cp production-artifacts-${{ github.run_number }}.zip s3://web-static-artifacts/production/
+        
+        - name: Deploy
+          run: aws s3 sync ./build s3://prism-markets
+        
+        - name: Create Cloudfront Invalidation
+          run: aws cloudfront create-invalidation --distribution-id E2R5M6K9G69F8X --paths "/*"
+
+        # Notify Github Channel for Build Process
+        - name: Notify Slack
+          uses: ravsamhq/notify-slack-action@v1
+          if: always()
+          with:
+            status: ${{ job.status }}
+            notification_title: '{workflow} has {status_message}'
+            message_format: '{emoji} {run_url} {status_message} in <{repo_url}|{repo}>'
+            footer: '<{repo_url}|{repo}>'
+            notify_when: 'success,failure,warnings'
+          env:
+            SLACK_WEBHOOK_URL: 'https://hooks.slack.com/services/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'

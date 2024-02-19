@@ -1,0 +1,100 @@
+.cubeModel {
+  font-family: 'DIN2014', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .cubePerspective {
+    position: relative;
+    flex: 0 0 550px;
+    width: 550px;
+    height: 550px;
+    z-index: 1020;
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from 0deg at 50% 65.61%,
+        #8b8e94 0deg,
+        #5f6369 360deg);
+    border-radius: 0px 0px 15px 15px;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(248.38deg, #a2a4a9 35.08%, #808288 96.48%);
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .outerHexagon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .innerHexagon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+    height: 560px;
+    background-image: url('../../assets/svg/hex-inner-cube.svg');
+    background-position: center -228px;
+    background-repeat: no-repeat;
+    background-size: 1230px;
+    z-index: 2;
+  }
+
+  // .outerHexagon {
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-image: url(./assets/outer-hexagon-base.svg);
+  //     background-position: center;
+  //     background-repeat: no-repeat;
+  //     opacity: 0.1;
+  // }
+
+  // .outerHexagonLines {
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-image: url(./assets/outer-hexagon-max.svg);
+  //     background-position: center;
+  //     background-repeat: no-repeat;
+  //     opacity: 0.1;
+  // }
+}

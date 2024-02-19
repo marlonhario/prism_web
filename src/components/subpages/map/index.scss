@@ -1,0 +1,104 @@
+@media screen and (min-width: 320px) {
+  .map-outline-inactive {
+    border-color: #4A4E58;
+  }
+
+  .map-parent-container {
+    padding-bottom: 50px;
+  }
+
+  .map-container {
+    zoom: 0.67;
+  }
+
+  .map-text-top {
+    bottom: -90px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .map-outline-inactive {
+    border-color: #6C7077;
+  }
+
+  .map-parent-container {
+    padding-bottom: 0;
+  }
+
+  .map-container {
+    zoom: 0.75;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .map-container {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .map-container {
+    zoom: 1;
+  }
+}
+
+
+@-moz-document url-prefix() {
+  @media screen and (min-width: 320px) {
+    .map-container {
+      scale: 0.67;
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .map-container {
+      scale: 0.75;
+    }
+  }
+
+
+  @media screen and (min-width: 1600px) {
+    .map-container {
+      scale: 0.8;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .map-container {
+      scale: 1;
+    }
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  @media screen and (min-width: 320px) {
+    .map-container {
+      .map-text-bot {
+        top: -80px;
+      }
+
+      .map-text-top {
+        bottom: -110px;
+      }
+
+      .map-text {
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .map-container {
+      .map-text {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

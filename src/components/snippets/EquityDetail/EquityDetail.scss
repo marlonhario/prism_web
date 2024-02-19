@@ -1,0 +1,64 @@
+.equity-detail {
+  position: absolute;
+  width: 180px;
+
+  &__sep {
+    margin: 0 1px -1px;
+    height: 2px;
+    border: none;
+    transform: rotate(-180deg);
+
+    &--MaxDiv {
+      background: linear-gradient(90deg, #BCA596 45.83%, #F8EDE1 100%);
+    }
+    &--GrowthGuard {
+      background: linear-gradient(90deg, #551919 45.83%, #A94447 100%);
+    }
+    &--PureGrowth {
+      background: linear-gradient(130.53deg, #5C8370 4.17%, #CCE9E3 100%);
+    }
+    &--PureDiv {
+      background: linear-gradient(261.57deg, #3D8E74 8.48%, #205544 91.47%);
+    }
+    &--MaxGrowth {
+      background: linear-gradient(124.34deg, #B1D6E8 47.71%, #CBEBF7 77.88%);
+    }
+    &--DivGuard {
+      background: linear-gradient(261.57deg, #426299 8.48%, #1A2741 91.47%);
+    }
+  }
+
+  &__box {
+    width: 100%;
+    background-image: url('../../../assets/svg//equity-box.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+  &__triangles {
+    position: relative;
+    width: 100%;
+    height: 112px;
+    background-image: url('../../../assets/svg//equity-triangles.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+
+  &__no-guard {
+    padding: 3px 5px 2px;
+    background: linear-gradient(261.57deg, #426299 8.48%, #1A2741 91.47%);
+    border-radius: 20px;
+    text-align: center;
+  }
+  &__no-guard.MaxDiv {
+    background: linear-gradient(116.44deg, #BCA596 17.3%, #F8EDE1 78.29%);
+    color: #333333;
+  }
+
+  &__position-value {
+    background: #A5A7AC;
+    box-shadow: inset -3px 3px 6px rgba(139, 140, 144, 0.2), inset 3px -3px 6px rgba(139, 140, 144, 0.2), inset -3px -3px 6px rgba(191, 194, 200, 0.9), inset 3px 3px 8px rgba(139, 140, 144, 0.9);
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,41 @@
+@media (max-width: 770px) {
+  .market-eta-header {
+    .eta-match-distance-col,
+    .eta-value-in-circulation-col,
+    .eta-add-col {
+      display: none;
+    }
+
+    .eta-remaining-term-col,
+    .eta-change-col,
+    .eta-growth-multiple-last-col,
+    .eta-growth-multiple-offer-col {
+      width: 18.75%;
+      word-spacing: 100px;
+    }
+
+    .eta-type-col {
+      width: 25%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .market-eta-header {
+    font-size: 8px;
+    font-weight: 300;
+
+    .eta-remaining-term-col,
+    .eta-change-col,
+    .eta-growth-multiple-last-col,
+    .eta-growth-multiple-offer-col,
+    .eta-match-distance-col,
+    .eta-value-in-circulation-col {
+      padding-left: 5px;
+    }
+
+    .eta-add-col {
+      padding-left: 10px;
+    }
+  }
+}

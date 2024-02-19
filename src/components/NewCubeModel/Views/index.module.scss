@@ -1,0 +1,400 @@
+.cubeViews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 161px;
+  left: -1px;
+  perspective: 100px;
+
+  .cubeView {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 193px;
+    height: 193px;
+
+    &.cubeTopView {
+      transform: rotate(-45deg) skew(15deg, 15deg) translate(-0.8px, 0.8px) translateZ(1px);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), linear-gradient(90deg, #FAFAFA 34%, #F3F3F3 40%, #CFCFCF 76%, #C2C2C2 95%);
+    }
+
+    &.cubeRightView {
+      transform: rotate(-15deg) skew(-15.1deg, -15.1deg) translate(50%, 100%) translateZ(1px);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), linear-gradient(149.13deg, #8E8E8E 38.27%, #969696 43.73%, #ADADAD 53%, #D3D3D3 64.46%, #EEEEEE 71.55%);
+    }
+
+    &.cubeLeftView {
+      transform: rotate(15deg) skew(15.1deg, 15.1deg) translate(-50%, 100%) translateZ(1px);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), linear-gradient(226.51deg, #FCFCFC 21.26%, #E4E4E4 24.9%, #C4C4C4 30.97%, #ABABAB 37.05%, #999999 43.73%, #8E8E8E 51.02%, #8B8B8B 58.91%);
+    }
+
+    .cubeViewAllocation {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 193px;
+        height: 193px;
+      }
+
+      .viewText {
+        position: absolute;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+
+        span {
+          &:first-child {
+            font-weight: 400;
+            font-size: 16px;
+          }
+
+          &:last-child {
+            font-weight: 700;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .customShareViewText {
+    display: flex;
+    position: absolute;
+    top: 135px;
+    z-index: 9;
+    cursor: pointer;
+
+    span {
+      width: 196px;
+      line-height: 20px;
+      padding: 6px 0;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+
+      &:first-child {
+        font-size: 12px;
+        font-weight: 800;
+        color: #FFFFFF;
+        transform: rotate(15deg) skew(15.1deg, 15.1deg) translate(12px, 0) translateZ(1px);
+      }
+
+      &:last-child {
+        font-size: 10px;
+        color: #FFFFFF;
+        transform: rotate(-15deg) skew(-15.1deg, -15.1deg) translate(-12px, 0) translateZ(1px);
+      }
+    }
+  }
+
+  &.red {
+    .cubeView {
+      flex-direction: column;
+      background: transparent;
+
+      &.cubeTopView {
+        .cubeViewAllocation {
+          &.growth {
+            &:first-child {
+              z-index: 2;
+
+              &:before {
+                background-image: linear-gradient(135deg, #f8ede1 30%, #e3d4c7 55%, #c6b1a3 80%, #bca596 90%);
+              }
+            }
+
+            &:last-child {
+              z-index: 1;
+
+              &:before {
+                background-image: linear-gradient(135deg, #c94d50 30%, #b04043 55%, #8c2d30 80%, #7f272a 90%);
+              }
+            }
+          }
+
+          &.income {
+            &:first-child {
+              z-index: 2;
+
+              &:before {
+                background-image: linear-gradient(135deg, #f8ede1 30%, #e3d4c7 55%, #c6b1a3 80%, #bca596 90%);
+              }
+            }
+
+            &:last-child {
+              z-index: 1;
+
+              &:before {
+                background-image: linear-gradient(135deg, #c94d50 30%, #b04043 55%, #8c2d30 80%, #7f272a 90%);
+              }
+            }
+          }
+        }
+      }
+
+      &.cubeRightView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              background-image: linear-gradient(155.213deg, #8a766b 26%, #917e73 36%, #a6948a 52%, #c7b9b0 71%, #e6dad2 87%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(157.229deg, #58191a 42%, #672022 55.00000000000001%, #913538 82%, #a84145 95%);
+            }
+          }
+        }
+      }
+
+      &.cubeLeftView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              background-image: linear-gradient(209.057deg, #f6eee8 2%, #d4c8c0 11%, #b8a9a0 21%, #a29187 30%, #938075 41%, #89766a 51%, #877367 64%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(209.057deg, #c14f55 2%, #b4484e 5%, #94373b 16%, #7b2a2c 27%, #692022 38%, #5e1a1c 50%, #5b191a 64%);
+            }
+          }
+        }
+      }
+    }
+
+    .customShareViewText {
+      span {
+        background-color: #B87E6C;
+      }
+    }
+  }
+
+  &.green {
+    .cubeView {
+      flex-direction: row;
+      background: transparent;
+
+      &.cubeTopView {
+        z-index: 9;
+
+        .cubeViewAllocation {
+          &:first-child {
+            &:before {
+              background-image: linear-gradient(135deg, #d0f2e1 34%, #b5d9c6 52%, #91baa2 80%, #84ae95 95%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(135deg, #44866e 34%, #3f7d66 42%, #2c5947 76%, #254c3c 95%);
+            }
+          }
+        }
+      }
+
+      &.cubeRightView {
+        z-index: 9;
+
+        .cubeViewAllocation {
+          &:first-child {
+            &:before {
+              background-image: linear-gradient(155.213deg, #5c7d6a 26%, #628572 36%, #759b89 52%, #92c0af 72%, #ade1d0 87%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(155.213deg, #183329 26%, #1b3b30 40%, #265244 63%, #34715f 87%);
+            }
+          }
+        }
+      }
+
+      &.cubeLeftView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              background-image: linear-gradient(226.28deg, #c7f2e5 2%, #a6cebf 11%, #8aaf9f 20%, #749786 30%, #658674 40%, #5c7c69 51%, #597966 64%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(226.28deg, #408974 2%, #326b5a 12%, #275244 24%, #1f4034 36%, #1a352b 49%, #193228 64%);
+            }
+          }
+        }
+      }
+    }
+
+    .customShareViewText {
+      span {
+        background-color: rgba(91, 186, 71, 0.3);
+      }
+    }
+  }
+
+  &.blue {
+    .cubeView {
+      flex-direction: column;
+      background: transparent;
+
+      &.cubeTopView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 2;
+
+            &:before {
+              background-image: linear-gradient(135deg, #d3eaf5 39%, #b8cfdd 68%, #94adbd 87%, #87a0b2 102%);
+            }
+          }
+
+          &:last-child {
+            z-index: 1;
+
+            &:before {
+              background-image: linear-gradient(135deg, #546ba3 39%, #495d90 68%, #35446c 87%, #2e3b5f 102%);
+            }
+          }
+        }
+      }
+
+      &.cubeRightView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              background-image: linear-gradient(155.213deg, #5d7282 26%, #637a8a 36%, #7790a1 52%, #95b5c7 71%, #b2d6e9 87%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(157.229deg, #1e273f 26%, #212c47 38%, #2b3a5e 56.99999999999999%, #3a5184 80%, #405990 87%);
+            }
+          }
+        }
+      }
+
+      &.cubeLeftView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              background-image: linear-gradient(209.057deg, #caeaf6 2%, #acc8d5 10%, #8ea8b6 20%, #788f9d 30%, #677d8b 40%, #5e7281 51%, #5b6f7e 64%);
+
+            }
+          }
+
+          &:last-child {
+            &:before {
+              background-image: linear-gradient(209.057deg, #4f6caa 2%, #476198 7.000000000000001%, #384c78 17%, #2c3b5f 28.000000000000004%, #24304d 39%, #1f2942 50%, #1e273f 64%);
+            }
+          }
+        }
+      }
+    }
+
+    .customShareViewText {
+      span {
+        background-color: #557FF4;
+      }
+    }
+  }
+
+  &.purple {
+    .cubeView {
+      flex-direction: column;
+      background: transparent;
+
+      &.cubeTopView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 2;
+
+            &:before {
+              // background-image: linear-gradient(135deg, #d3eaf5 39%, #b8cfdd 68%, #94adbd 87%, #87a0b2 102%);
+              background-image: linear-gradient(135deg, #e2dcf0 34%, #c7c0d6 53%, #a49db5 80%, #978fa9 95%);
+            }
+          }
+
+          &:last-child {
+            z-index: 1;
+
+            &:before {
+              // background-image: linear-gradient(135deg, #546ba3 39%, #495d90 68%, #35446c 87%, #2e3b5f 102%);
+              background-image: linear-gradient(135deg, #8472bd 34%, #7161a4 51%, #564981 80%, #4c4073 95%);
+            }
+          }
+        }
+      }
+
+      &.cubeRightView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              // background-image: linear-gradient(155.213deg, #5d7282 26%, #637a8a 36%, #7790a1 52%, #95b5c7 71%, #b2d6e9 87%);
+              background-image: linear-gradient(155.213deg, #6b667d 26%, #726e85 36%, #87849d 52%, #a8a7c2 72%, #c5c6e3 87%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              // background-image: linear-gradient(157.229deg, #1e273f 26%, #212c47 38%, #2b3a5e 56.99999999999999%, #3a5184 80%, #405990 87%);
+              background-image: linear-gradient(157.229deg, #332b51 26%, #383059 37%, #463e71 55.00000000000001%, #5d5596 77%, #6860a9 87%);
+            }
+          }
+        }
+      }
+
+      &.cubeLeftView {
+        .cubeViewAllocation {
+          &:first-child {
+            z-index: 1;
+
+            &:before {
+              // background-image: linear-gradient(209.057deg, #caeaf6 2%, #acc8d5 10%, #8ea8b6 20%, #788f9d 30%, #677d8b 40%, #5e7281 51%, #5b6f7e 64%);
+              background-image: linear-gradient(209.057deg, #dddff3 2%, #bdbdd1 10%, #9e9db1 20%, #868398 30%, #757186 40%, #6b667b 51%, #686378 64%);
+            }
+          }
+
+          &:last-child {
+            &:before {
+              // background-image: linear-gradient(209.057deg, #4f6caa 2%, #476198 7.000000000000001%, #384c78 17%, #2c3b5f 28.000000000000004%, #24304d 39%, #1f2942 50%, #1e273f 64%);
+              background-image: linear-gradient(209.057deg, #7e74c3 2%, #6a61a5 9%, #554c85 19%, #453c6b 28.999999999999996%, #393159 40%, #322a4e 51%, #30284b 64%);
+            }
+          }
+        }
+      }
+    }
+
+    .customShareViewText {
+      span {
+        background-color: #B7A2EF;
+      }
+    }
+  }
+}

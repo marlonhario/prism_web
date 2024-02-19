@@ -1,0 +1,127 @@
+.optimise {
+  .section-label {
+    // font-size: 21px;
+    color: #FFF;
+  }
+
+  .section-description {
+    font-size: 12px;
+    color: #FFF;
+  }
+
+  .step-info {
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #2C2F33;
+    backdrop-filter: blur(42px);
+    border-radius: 3px;
+
+    .step-label {
+      background: linear-gradient(0deg, #2C2F33, #2C2F33), linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+      border: 1px solid #2C2F33;
+      backdrop-filter: blur(42px);
+      color: #FFF;
+      font-weight: bold;
+      border-radius: 1px;
+      padding: 2px 10px;
+    }
+
+    .step-description {
+      min-height: 29px;
+      color: #FFF;
+    }
+  }
+
+  .section-body {
+    .section-logo img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .section-details {
+      background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(35.767px);
+      border-radius: 2.55479px;
+
+      .action-label {
+        font-weight: bold;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+
+      .action-list {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        flex-wrap: wrap;
+
+        .ant-btn-primary {
+          background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(164, 158, 153, 0.3);
+          backdrop-filter: blur(13.4735px);
+          border-radius: 1.77923px;
+          border-color: #d3cece;
+          color: #2C2F33;
+          margin-left: 5px;
+          font-size: 0.75rem;
+          margin-top: 5px;
+        }
+      }
+
+      .exposure-label,
+      .yield-label {
+        font-weight: 600;
+        color: #2C2F33;
+      }
+
+      .expsoure-text,
+      .yield-text {
+        font-weight: 600;
+        font-size: 12.54px;
+        color: #5A6267;
+      }
+
+      .exposure-value,
+      .yield-value {
+        background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(42px);
+        border-radius: 3px;
+        font-weight: 600;
+        color: #5A6267;
+      }
+    }
+
+    .price-info {
+      .label {
+        font-size: 8.33712px;
+        text-transform: uppercase;
+        color: #2C2F33;
+      }
+
+      .amount {
+        font-weight: 600;
+        font-size: 15.2382px;
+        color: #2C2F33;
+      }
+    }
+
+    .invested-info {
+      color: #fff;
+      align-items: center;
+      padding: 15px;
+
+      .label {
+        font-size: 10px;
+      }
+
+      .amount {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.section-info {
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(40.4002px);
+  border-radius: 2.88573px;
+}

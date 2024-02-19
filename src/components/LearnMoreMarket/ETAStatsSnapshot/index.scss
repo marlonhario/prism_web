@@ -1,0 +1,72 @@
+.learnmore-market-eta-stats-snapshot {
+  display: flex;
+
+  &.red {
+    >div {
+      &:first-child {
+        display: none;
+      }
+    }
+
+    &.alternate {
+      display: flex;
+      flex-direction: row-reverse;
+
+      >div {
+        &:first-child {
+          display: flex;
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.green {
+    >div {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &.alternate {
+      display: flex;
+      flex-direction: row-reverse;
+
+      >div {
+        &:first-child {
+          display: flex;
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.blue {
+    >div {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &.alternate {
+      display: flex;
+      flex-direction: row-reverse;
+
+      >div {
+        &:first-child {
+          display: none;
+        }
+
+        &:last-child {
+          display: flex;
+        }
+      }
+    }
+  }
+}

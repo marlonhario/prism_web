@@ -1,0 +1,25 @@
+.learnmore-market-add-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 84px;
+  height: 100%;
+  padding-left: 8%;
+  padding-right: 5%;
+  border: 1px solid #3074BA;
+  border-radius: 1.79289px;
+  box-shadow: -1px 1px 2px rgba(216, 216, 216, 0.2), 1px -1px 2px rgba(216, 216, 216, 0.2), -1px -1px 2px rgba(254, 254, 254, 0.9), 1px 1px 3px rgba(216, 216, 216, 0.9), inset 1px 1px 2px rgba(254, 254, 254, 0.3), inset -1px -1px 2px rgba(216, 216, 216, 0.5);
+  background: #EBEBEB;
+
+  .learnmore-market-add-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 0.896445px;
+    box-shadow: -1.79289px 1.79289px 3.58578px rgba(178, 178, 178, 0.2), 1.79289px -1.79289px 3.58578px rgba(178, 178, 178, 0.2), -1.79289px -1.79289px 3.58578px rgba(255, 255, 255, 0.9), 1.79289px 1.79289px 4.48223px rgba(178, 178, 178, 0.9);
+    background: linear-gradient(135deg, #E8E8E8 0%, #FFFFFF 100%);
+    backdrop-filter: blur(23.0983px);
+  }
+}

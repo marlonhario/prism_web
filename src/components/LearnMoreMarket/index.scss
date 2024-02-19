@@ -1,0 +1,472 @@
+.learnmore-market {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  &.expanded {
+    .learnmore-market-eta-titles {
+      &.red {
+        .learnmore-market-eta-title {
+          &:first-child {
+            background: radial-gradient(190.7% 1470.62% at 32.14% 9.74%, #FF3D55 0%, #DA1A32 100%) !important;
+            color: #FFFFFF !important;
+          }
+
+          &:last-child {
+            background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #E9CF85 0%, #C8B273 82.63%) !important;
+            color: #FFFFFF !important;
+          }
+        }
+      }
+
+      &.green {
+        .learnmore-market-eta-title {
+          &:first-child {
+            background: radial-gradient(190.7% 1470.62% at 32.14% 9.74%, #73B564 0%, #90C983 100%) !important;
+            color: #FFFFFF !important;
+          }
+
+          &:last-child {
+            background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #208043 0%, #73B564 82.63%) !important;
+            color: #FFFFFF !important;
+          }
+        }
+      }
+
+      &.blue {
+        .learnmore-market-eta-title {
+          &:first-child {
+            background: radial-gradient(190.7% 1470.62% at 32.14% 9.74%, #00C7ED 0%, #025F7B 100%) !important;
+            color: #FFFFFF !important;
+          }
+
+          &:last-child {
+            background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #4094D3 0%, #025F7B 82.63%) !important;
+            color: #FFFFFF !important;
+          }
+        }
+      }
+    }
+
+    .learnmore-market-eta-panels {
+      .learnmore-market-eta-panel {
+        display: flex !important;
+        width: 49% !important;
+
+        &:last-child {
+          left: 51% !important;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 120%;
+            top: 0;
+            bottom: 0;
+            left: -2%;
+            background-color: #BBBBBB;
+          }
+        }
+      }
+    }
+  }
+
+  .learnmore-market-header {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 2.05% 2%;
+
+    .learnmore-market-header-action {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      border: 1px solid #C4C4C4;
+      border-radius: 100px;
+      padding: 0.25% 1.5% 0.25% 0.75%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #C4C4C4;
+
+        span {
+          color: #FFFFFF;
+        }
+
+        svg {
+          fill: #FFFFFF;
+        }
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #C4C4C4;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: #C4C4C4;
+      }
+    }
+
+    .learnmore-market-header-title {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      color: #A49E99;
+    }
+  }
+
+  .learnmore-market-info {
+    background: #EBEBEB;
+    box-shadow: inset -5.37867px 5.37867px 10.7573px rgba(202, 202, 202, 0.2), inset 5.37867px -5.37867px 10.7573px rgba(202, 202, 202, 0.2), inset -5.37867px -5.37867px 10.7573px rgba(255, 255, 255, 0.9), inset 5.37867px 5.37867px 13.4467px rgba(202, 202, 202, 0.9);
+
+    .learnmore-market-info-desc {
+      display: grid;
+      grid-auto-flow: row;
+      width: 86%;
+      padding: 2% 0 0.5%;
+      margin: auto;
+
+      .learnmore-market-info-desc-item {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: minmax(12%, 130px) repeat(3, minmax(auto, 120px));
+        column-gap: 1%;
+        position: relative;
+        padding: 3% 0;
+
+        &:not(:last-child) {
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #A49E99;
+            box-shadow: -1px 1px 2px rgba(227, 227, 227, 0.2), 1px -1px 2px rgba(227, 227, 227, 0.2), -1px -1px 2px rgba(255, 255, 255, 0.9), 1px 1px 3px rgba(227, 227, 227, 0.9);
+            backdrop-filter: blur(25.7666px);
+            transform: rotate(-180deg);
+          }
+        }
+
+        .learnmore-market-security-logo {
+          height: 30px;
+          filter: invert(75%) sepia(0%) saturate(3520%) hue-rotate(97deg) brightness(81%) contrast(110%);
+        }
+
+        >div {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            font-size: 10px;
+            line-height: 13px;
+            letter-spacing: 0.1em;
+
+            &:first-child {
+              color: #A49E99;
+            }
+
+            &:last-child {
+              margin-top: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .learnmore-market-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .learnmore-market-eta {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      &:last-child {
+        .learnmore-market-eta-header {
+          justify-content: flex-end;
+        }
+      }
+
+      .learnmore-market-eta-titles {
+        display: flex;
+        padding: 1% 5% 0;
+        background-color: #EBEBEB;
+
+        &.red {
+          .learnmore-market-eta-title {
+
+            &.active,
+            &:hover {
+
+              &:first-child {
+                background: radial-gradient(190.7% 1470.62% at 32.14% 9.74%, #FF3D55 0%, #DA1A32 100%);
+              }
+
+              &:last-child {
+                background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #E9CF85 0%, #C8B273 82.63%);
+              }
+            }
+          }
+        }
+
+        &.green {
+          .learnmore-market-eta-title {
+
+            &.active,
+            &:hover {
+
+              &:first-child {
+                background: radial-gradient(190.7% 1470.62% at 32.14% 9.74%, #73B564 0%, #90C983 100%);
+              }
+
+              &:last-child {
+                background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #208043 0%, #73B564 82.63%);
+              }
+            }
+          }
+        }
+
+        &.blue {
+          .learnmore-market-eta-title {
+
+            &.active,
+            &:hover {
+
+              &:first-child {
+                background: radial-gradient(190.7% 1470.62% at 32.14% 9.74%, #00C7ED 0%, #025F7B 100%);
+              }
+
+              &:last-child {
+                background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #4094D3 0%, #025F7B 82.63%);
+              }
+            }
+          }
+        }
+
+        .learnmore-market-eta-title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          height: 50px;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          color: #BBBBBB;
+          cursor: pointer;
+
+          &:hover,
+          &.active {
+            color: #FFFFFF;
+          }
+
+          &:first-child {
+            margin-right: auto;
+          }
+
+          &:last-child {
+            margin-right: auto;
+            margin-left: auto;
+          }
+
+          span {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+
+            &:first-child {
+              font-weight: 700;
+            }
+
+            &:last-child {
+              font-size: 14px;
+              font-weight: 400;
+              margin-top: -10px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      .learnmore-market-eta-panels {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(-1);
+        overflow: hidden auto;
+        overflow: hidden overlay;
+
+        .learnmore-market-eta-panels-scroll {
+          width: 100%;
+          height: 100%;
+          transform: scaleX(-1);
+        }
+
+        .learnmore-market-eta-panel {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          .learnmore-market-eta-stats {
+            .learnmore-market-eta-stats-titles {
+              span {
+
+                &.active,
+                &:hover {
+                  box-shadow: 1px 1px 2px rgba(78, 84, 94, 0.3), -1px -1px 2px rgba(64, 68, 77, 0.5), inset -5px 5px 10px rgba(64, 68, 77, 0.2), inset 5px -5px 10px rgba(64, 68, 77, 0.2), inset -5px -5px 10px rgba(78, 84, 94, 0.9), inset 5px 5px 13px rgba(64, 68, 77, 0.9);
+                  border-color: #FFFFFF;
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+
+          &:first-child {
+            .learnmore-market-eta-stats {
+              .learnmore-market-eta-stats-titles {
+                &.red {
+                  background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #FF3D55 0%, #DA1A32 82.63%);
+
+                  span {
+
+                    &.active,
+                    &:hover {
+                      background: linear-gradient(92.64deg, #E9CF85 -0.89%, #C8B273 101.52%);
+                    }
+                  }
+                }
+
+                &.green {
+                  background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #73B564 0%, #90C983 82.63%);
+
+                  span {
+
+                    &.active,
+                    &:hover {
+                      background: linear-gradient(92.64deg, #208043 -0.89%, #73B564 101.52%);
+                    }
+                  }
+                }
+
+                &.blue {
+                  background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #00C7ED 0%, #025F7B 82.63%);
+
+                  span {
+
+                    &.active,
+                    &:hover {
+                      background: linear-gradient(92.64deg, #4094D3 -0.89%, #025F7B 101.52%);
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &:last-child {
+
+            .learnmore-market-eta-stats {
+              .learnmore-market-eta-stats-titles {
+                &.red {
+                  background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #E9CF85 0%, #C8B273 82.63%);
+
+                  span {
+
+                    &.active,
+                    &:hover {
+                      background: linear-gradient(92.64deg, #FF3D55 -0.89%, #DA1A32 101.52%);
+                    }
+                  }
+                }
+
+                &.green {
+                  background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #208043 0%, #73B564 82.63%);
+
+                  span {
+
+                    &.active,
+                    &:hover {
+                      background: linear-gradient(92.64deg, #73B564 -0.89%, #90C983 101.52%);
+                    }
+                  }
+                }
+
+                &.blue {
+                  background: radial-gradient(82.55% 2039.25% at 27.74% 50%, #4094D3 0%, #025F7B 0 82.63%);
+
+                  span {
+
+                    &.active,
+                    &:hover {
+                      background: linear-gradient(92.64deg, #00C7ED -0.89%, #025F7B 101.52%);
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .learnmore-market-eta-panel-body {
+            width: 100%;
+
+            .learnmore-market-eta-info {
+              background-color: rgba(126, 182, 217, 0.1);
+
+              .learnmore-market-eta-panel-info-desc {
+                display: grid;
+                grid-auto-flow: row;
+                row-gap: 10px;
+                width: 86%;
+                padding: 3% 0 2%;
+                margin: auto;
+
+                .learnmore-market-eta-panel-info-desc-item {
+                  display: grid;
+                  grid-auto-flow: column;
+                  grid-template-columns: repeat(4, 1fr);
+                  column-gap: 10px;
+
+                  >div {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                      font-size: 10px;
+                      line-height: 13px;
+                      letter-spacing: 0.1em;
+
+                      &:first-child {
+                        color: #A49E99;
+                      }
+
+                      &:last-child {
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

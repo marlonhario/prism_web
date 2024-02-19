@@ -1,0 +1,116 @@
+.custom-share-variable {
+  direction: rtl;
+
+  >div {
+    direction: ltr;
+  }
+
+  .custom-share-variable-chart {
+    border: 0.5px solid;
+    border-image-source: linear-gradient(180deg, #E5E5E5 0%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(100.4% 250.78% at 0% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+      , rgba(255, 255, 255, 0.05);
+
+    >div:first-child {
+      border: 0.5px solid;
+      border-image-source: linear-gradient(180deg, #E5E5E5 0%, rgba(255, 255, 255, 0) 100%);
+      background: radial-gradient(100.4% 250.78% at 0% 0%, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , rgba(255, 255, 255, 0.05);
+    }
+
+
+    .custom-share-variable-chart-slider-left,
+    .custom-share-variable-chart-slider-right {
+      >div {
+        &:first-child {
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), linear-gradient(226.51deg, #FCFCFC 21.26%, #E4E4E4 24.9%, #C4C4C4 30.97%, #ABABAB 37.05%, #999999 43.73%, #8E8E8E 51.02%, #8B8B8B 58.91%);
+        }
+
+        &:last-child {
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), linear-gradient(149.13deg, #8E8E8E 38.27%, #969696 43.73%, #ADADAD 53%, #D3D3D3 64.46%, #EEEEEE 71.55%);
+        }
+      }
+
+      .custom-share-variable-chart-slider-indicator {
+        &:before {
+
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #FFFFFF;
+          box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.55);
+        }
+      }
+    }
+
+    &.red {
+
+      .custom-share-variable-chart-slider-left,
+      .custom-share-variable-chart-slider-right {
+        >div {
+          &:first-child {
+            background: linear-gradient(0deg, #A94548 0.61%, #551919 100.61%);
+          }
+
+          &:last-child {
+            background: linear-gradient(0deg, #FCF4EC -0.46%, #C0A99E 93.76%);
+          }
+        }
+      }
+    }
+
+    &.green {
+
+      .custom-share-variable-chart-slider-left,
+      .custom-share-variable-chart-slider-right {
+        >div {
+          &:first-child {
+            background: linear-gradient(0deg, #CCE8E2 -0.45%, #5C8270 96.55%);
+          }
+
+          &:last-child {
+            background: linear-gradient(0deg, #3D8D74 -0.42%, #215544 96.58%);
+          }
+        }
+      }
+    }
+
+    &.blue {
+
+      .custom-share-variable-chart-slider-left,
+      .custom-share-variable-chart-slider-right {
+        >div {
+          &:first-child {
+            background: linear-gradient(180deg, rgba(142, 169, 186, 0.5) 0.58%, rgba(203, 235, 247, 0.5) 96.61%);
+          }
+
+          &:last-child {
+            background: linear-gradient(0deg, #426299 1.39%, #1A2741 101.85%);
+          }
+        }
+      }
+    }
+
+    &.purple {
+
+      .custom-share-variable-chart-slider-left,
+      .custom-share-variable-chart-slider-right {
+        >div {
+          &:first-child {
+            background: linear-gradient(180deg, #DEDFF0 -1.45%, #A097B1 101.64%);
+          }
+
+          &:last-child {
+            background: linear-gradient(0deg, #7368AE 1.61%, #342C53 99.88%);
+          }
+        }
+      }
+    }
+  }
+}

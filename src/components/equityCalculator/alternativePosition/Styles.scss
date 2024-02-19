@@ -1,0 +1,19 @@
+.alternativePosition {
+    position: relative;
+    .equal {
+        position: absolute;
+        bottom: 43%;
+        left: 56%;
+    }
+    .plus {
+        position: absolute;
+        bottom: 43%;
+        left: 21%;
+        color: #c4c4c4;
+        svg {
+            height: auto;
+            width: 50px;
+        }
+    }
+    
+}

@@ -1,0 +1,117 @@
+.learn-more-market-slider-left {
+  >* {
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+  }
+
+  position: absolute;
+  bottom: 0;
+  width: 125px;
+  height: 35px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+
+  &.flip {
+    top: 0;
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: top left;
+  }
+
+  .learn-more-market-slider-left-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    appearance: none;
+    z-index: 3;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 30px;
+      height: 35px;
+      border: none;
+      box-shadow: none;
+      background: none;
+      appearance: none;
+      cursor: row-resize;
+    }
+
+    &::-moz-range-thumb {
+      width: 30px;
+      height: 35px;
+      border: none;
+      box-shadow: none;
+      background: none;
+      appearance: none;
+      cursor: row-resize;
+    }
+  }
+}
+
+.learn-more-market-slider-left-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+
+  .learn-more-market-slider-left-trackThumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -18px;
+    flex-shrink: 0;
+    width: 36px;
+    height: 100%;
+
+    .learn-more-market-slider-left-trackThumb-pointer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 15px;
+
+      &:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        svg {
+          transform: rotate(-90deg);
+
+          path {
+            fill: inherit;
+          }
+        }
+      }
+
+      &:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        svg {
+          transform: rotate(90deg);
+
+          path {
+            fill: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+.learn-more-market-slider-left-range {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}

@@ -1,0 +1,178 @@
+.tableHeader {
+  background-color: #E8EEF3;
+  backdrop-filter: blur(45.7626px);
+  border-radius: 3.26875px 3.26875px 0px 0px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  .alphaSortHeader {
+    width: 7%;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .allEtaActionButton {
+    border-radius: 0.5rem;
+    right: 10px;
+    padding: 0 1.5rem 0 0.25rem;
+    height: auto;
+  }
+  .allEtaActionButton.opened {
+    background-color: #2c2f33;
+    color: white;
+  }
+  .allEtaActionButton.closed {
+    background-color: white;
+    color: #a49e99;
+  }
+  .sortBy .growth, .sortBy .yield, .sortBy .underlyingName {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    padding: 0 0.25rem;
+    height: auto;
+    color: #a49e99;
+  }
+  .sortBy .underlyingName {
+    width: 100%;
+    right: 0.3rem;
+  }
+  .sortBy .growth.active, .sortBy .yield.active, .sortBy .underlyingName.active {
+    background-color: #2c2f33;
+    color: white;
+  }
+  .ant-btn {
+    font-size: 12px;
+  }
+  .textColorGray {
+    color:gray;
+  }
+}
+
+.alphaSort {
+  width: 7%;
+  background-color: #E8EEF3;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  justify-content: space-between;
+  .alphabet {
+    width: 30px;
+  }
+  .alphabet:hover {
+    background-color: #5A6267;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 0.2rem;
+  }
+  .alphabet.disabled, .alphabet.disabled:hover {
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
+}
+.securityTable {
+  .tableContent {
+    padding: 0.5rem;
+    align-items: center;
+    .underlyingSecurity {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .tickerCode {
+        width: 25%;
+        font-weight: bolder;
+        span {
+          display: none;
+        }
+      }
+      .tickerImage {
+        width: 75%;
+        text-align: -webkit-center;
+        .logoPending {
+          background-color: #2c2f33;
+          color: white;
+          border-radius: 1rem;
+          font-size: 12px;
+          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+    .securityDetails {
+      display: flex;
+      flex-direction: column;
+      .securityPrices {
+        display: none;
+      }
+    }
+    button[ant-click-animating-without-extra-node]:after {
+      border: 0 none;
+      opacity: 0;
+      animation: none 0 ease 0 1 normal;
+    }
+    .actionButton {
+      border-radius: 0.5rem;
+      padding: 0 0.5rem;
+      height: auto;
+    }
+    .actionButton.opened {
+      background-color: #2c2f33;
+      color: white;
+    }
+    .actionButton.closed {
+      background-color: white;
+      color: #a49e99;
+    }
+  }
+  // Hovering Styles
+  .tableContent:hover,
+  .tableContent.activated {
+    background: #c4c4c44d;
+    .companyDetails {
+      border-right: 1px solid #ddd;
+      margin-right: 0.5rem;
+    }
+    .underlyingSecurity {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+      .tickerCode {
+        padding-top: 1rem;
+        width: 100%;
+        span {
+          display: inline;
+          font-weight: lighter;
+          padding-right: 0.7rem;
+        }
+      }
+      .tickerImage {
+        width: 100%;
+        .logoPending {
+          background-color: #2c2f33;
+          color: white;
+          border-radius: 1rem;
+          font-size: 12px;
+          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        }
+      }
+    }
+    .securityDetails {
+      display: flex;
+      flex-direction: column;
+      .securityPrices {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.5rem;
+        font-size: 12px;
+        .lastPrice {
+          width: 33.3%;
+        }
+        .dividendYield {
+          width: 33.3%;
+        }
+        .marketCap {
+          width: 33.3%;
+        }
+      }
+    }
+  }
+}

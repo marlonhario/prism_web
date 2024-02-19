@@ -1,0 +1,10 @@
+@media (max-width: 450px) {
+  .markets-eta-tablist {
+    column-gap: 0;
+    overflow: hidden;
+
+    button {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.page-content-header {
+  padding-bottom: 0px;
+
+  .equity-container {
+    min-height: 100vh !important;
+  }
+
+  .step-content {
+    min-height: 100vh !important;
+  }
+}
+
+.equity-container {
+  border-radius: 0px 3px 3px 0px;
+  flex: 1;
+  position: relative;
+  min-height: calc(100vh - 100px);
+
+  &.step2 {
+    width: 100% !important;
+  }
+
+  &.step1 {
+    width: calc(100% / 3);
+  }
+
+  &.step3 {
+    width: 100%;
+  }
+
+  .equityPayoffChart {
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(34.4454px);
+    margin-top: 30px;
+    padding-bottom: 20px;
+
+    .chartHeader {
+      color: grey;
+      font-size: 13px;
+      padding: 12px 12px 0px 12px;
+    }
+  }
+
+  .transition-half {
+    width: 50% !important;
+  }
+
+  .transition-quarter {
+    width: 33.33% !important;
+  }
+
+  &-white-background {
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(100px);
+  }
+
+  &-dark-background {
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(42px);
+  }
+
+  &-step-container {
+    padding: 20px 30px 70px 30px;
+    min-height: calc(100vh - 100px);
+    height: 100%;
+
+    &.transition.width.show {
+      min-height: calc(100vh - 100px);
+    }
+
+    &.transition {
+      display: flex;
+    }
+  }
+
+  &-step-content-spacing {
+    padding-top: 95px;
+  }
+
+  &-step-border {
+    border-right: 1px solid white;
+  }
+}

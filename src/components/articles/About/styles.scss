@@ -1,0 +1,90 @@
+.challenge-section {
+    background: url('../../../assets/images/about-challenge.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.unlock-section {
+    background: url('../../../assets/images/about-unlock.png');
+    background-size: cover;
+}
+
+.innovation-section {
+    background: url('../../../assets/images/about-innovation.png');
+    background-size: cover;
+}
+
+.directors-collapse {
+    &.not-expanded {
+        .ant-collapse-item {
+            .ant-collapse-content-box {
+                padding-right: 20px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    &.ant-collapse {
+        border: none;
+    }
+
+    // background: radial-gradient(154.83% 143.1% at 0% 100%, rgba(255, 255, 255, 0.1) 63.99%, rgba(255, 255, 255, 0) 100%), radial-gradient(50.5% 0% at 49.48% 50%, rgba(52, 55, 65, 0.5) 0%, #474C55 100%);
+    .ant-collapse-item {
+        border: none;
+        position: relative;
+
+        .ant-collapse-content {
+            background: transparent;
+            margin-bottom: -20px;
+        }
+
+        // background: radial-gradient(154.83% 143.1% at 0% 100%, rgba(255, 255, 255, 0.1) 63.99%, rgba(255, 255, 255, 0) 100%), radial-gradient(50.5% 0% at 49.48% 50%, rgba(52, 55, 65, 0.5) 0%, #474C55 100%);
+
+        .ant-collapse-content-box {
+            padding-top: 70px;
+            padding-bottom: 40px;
+            padding-right: 70px;
+        }
+
+        .ant-collapse-header {
+            padding-top: 20px;
+            padding-bottom: 0px;
+            margin-bottom: -20px;
+            z-index: 1;
+        }
+
+        .ant-collapse-header,
+        .ant-collapse-content-box {
+            padding-left: 50px !important;
+            border-radius: 0px 0px 15px 15px !important;
+            background: radial-gradient(154.83% 143.1% at 0% 100%, rgba(255, 255, 255, 0.1) 63.99%, rgba(255, 255, 255, 0) 100%), radial-gradient(50.5% 0% at 49.48% 50%, rgba(52, 55, 65, 0.5) 0%, #474C55 100%);
+            box-shadow: 1px -1px 2px rgba(50, 53, 60, 0.2), 1px 1px 3px rgba(50, 53, 60, 0.9);
+        }
+    }
+
+    .ant-collapse-item:first-child {
+        .ant-collapse-header {
+            padding-top: 0px;
+        }
+    }
+
+    .ant-motion-collapse-enter {
+        opacity: 1 !important;
+    }
+
+    .ant-motion-collapse-leave {
+        opacity: 1 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    // .directors-collapse {
+    //     display: none;
+    // }
+
+    .innovation-section {
+        h2:last-child {
+            display: none;
+        }
+    }
+}

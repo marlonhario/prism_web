@@ -1,0 +1,81 @@
+.strategies {
+  background: linear-gradient(152.62deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 101%), rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .topContent {
+    padding: 5rem 3rem 0 3rem;
+    .headerText {
+      padding-bottom: 1rem;
+    }
+    .headerMenu {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      font-size: 10px;
+      color: black;
+      font-weight: 600;
+      height: 8rem;
+
+      .coreOpportunities {
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+
+      .useCases {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+
+      .bearAndBull {
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+
+      .dot {
+        height: 40px;
+        width: 40px;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 0.1rem;
+        cursor: pointer;
+      }
+      .dot:hover {
+        border: 3px solid grey;
+      }
+      .rightDivider {
+        border-right: 1px solid #ddd;
+      }
+    }
+  }
+  .bottomContent {
+    overflow-y: auto;
+    .accelerateGrowth, .amplifiedYield, .shareCapitalRelease, .bearMarketStrategies, .bullMarketStrategies, .estatePlanning, .nextGenInvestors, .overseasInvestors, .riskMitigation, .strategicAdvantage, .accessLiquidity, .fees, .introContent {
+      padding: 0 3rem 1rem 3rem;
+    }
+  }
+  .bottomContent::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
